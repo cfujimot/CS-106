@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class Accuracy_Precision_Calculator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// define accuracy variables
+		double measuredValue;
+		double exactValue;
+		double percentError;
+		
+		//calculate percent error for density of water
+		measuredValue = 1.06;
+		exactValue = 1.00;
+		percentError = (abs(measuredValue - exactValue) / exactValue) * 100;
+		
+		//output percent error
+		System.out.println("Accuracy: Percent Error");
+		System.out.println("percentError");
+		
+		//define precision variables
+		double averageValue;
+		double sumOfDifferences;
+		double standardDeviation;
+		double standardError;
+		int numberOfTrials;
+		
+		//calculate sum of differences
+		averageValue = 1.06;
+		sumOfDifferences = (x - averageValue);
+
+		//calculate standard error of the mean for density of water
+		standardDeviation = (sqrt((sumOfDifferences * sumOfDifferences) / (numberOfTrials - 1) ));
+		standardError = (standardDeviation / sqrt(numberOfTrials));
+		
+	}
+
+}

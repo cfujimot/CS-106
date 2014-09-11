@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class Accuracy_Precision_Calculator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// define accuracy variables
+		double measuredValue;
+		double exactValue;
+		double percentError;
+		
+		//calculate percent error
+		measuredValue = ;
+		literatureValue = ;
+		percentError = (abs(measuredValue - exactValue) / exactValue) * 100
+		
+	}
+
+}
