@@ -50,7 +50,7 @@ public class Accuracy_Precision_Calculator {
 		System.out.print("What is the number of trials?: ");
 		int numberOfTrials = consoleNumberOfTrials.nextInt();
 		
-		//request value of each trial
+	//TODO How to request input based on the number of trials? How to request multiple input at once?
 		Scanner consoleTrialValues = new Scanner(System.in);
 		System.out.println("What is the value of each trial?");
 		double x1 = consoleTrialValues.nextDouble();
@@ -78,17 +78,17 @@ public class Accuracy_Precision_Calculator {
 		precisionRAD(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		
 		//output standard error of the mean
-		double standardError = precisionSEM(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
+		double standardError = precisionRAD(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		System.out.println("Precision, via Standard Error of the Mean:");
 		System.out.println("For a calculated average of " + calculatedAverage);
 		System.out.println("the Standard Error of the Mean of these " + numberOfTrials + " trials is ±" + standardError + ".");
 		System.out.println();
 		
 		//output relative average deviation
-		double relativeAverageDeviation = precisionRAD(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
+		double relativeAverageDeviation = precisionSEM(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		System.out.println("Precision, via Percent Relative Average Deviation:");
 		System.out.println("For a calculated average of " + calculatedAverage);
-		System.out.println("the Percent Relative Average Deviation of these " + numberOfTrials + " trials is " + relativeAverageDeviation + "%.");
+		System.out.println("the Percent Relative Average Deviation of these " + numberOfTrials + " trials is " + relativeAverageDeviation + ".");
 	}
 	
 	public static double accuracy(double calculatedAverage, double literatureValue) {
@@ -111,6 +111,7 @@ public class Accuracy_Precision_Calculator {
 		double standardError;
 				
 		//calculate sum of squares
+	//TODO Any way to loop these calculations? See also: RAD method below.
 		sumOfSquares = ((x1 - calculatedAverage)*(x1 - calculatedAverage) + (x2 - calculatedAverage)*(x2 - calculatedAverage) + (x3 - calculatedAverage)*(x3 - calculatedAverage) + (x4 - calculatedAverage)*(x4 - calculatedAverage) + (x5 - calculatedAverage)*(x5 - calculatedAverage) + (x6 - calculatedAverage)*(x6 - calculatedAverage) + (x7 - calculatedAverage)*(x7 - calculatedAverage) + (x8 - calculatedAverage)*(x8 - calculatedAverage) + (x9 - calculatedAverage)*(x9 - calculatedAverage));
 
 		//calculate standard error of the mean
@@ -127,6 +128,7 @@ public class Accuracy_Precision_Calculator {
 		double relativeAverageDeviation;
 		
 		//calculate average deviations
+	//TODO Any way to loop these calculations, as in SEM method above?
 		averageDeviations = (Math.abs(calculatedAverage - x1) + Math.abs(calculatedAverage - x2) + Math.abs(calculatedAverage - x3) + Math.abs(calculatedAverage - x4) + Math.abs(calculatedAverage - x5) + Math.abs(calculatedAverage - x6) + Math.abs(calculatedAverage - x7) + Math.abs(calculatedAverage - x8) + Math.abs(calculatedAverage - x9)) / numberOfTrials;
 		
 		//calculate percent RAD
