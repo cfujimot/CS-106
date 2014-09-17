@@ -40,8 +40,8 @@ public class Accuracy_Precision_Calculator {
 		double percentError = accuracy(calculatedAverage, literatureValue);
 		System.out.println();
 		System.out.println("Accuracy, via Percent Error:");
-		System.out.println("For a calcualted average of " + calculatedAverage);
-		System.out.println("and a literature value of " + literatureValue);
+		System.out.println("For a Mean calculated density of " + calculatedAverage + " grams per milliliter,");
+		System.out.println("and a literature value of " + literatureValue + " grams per milliliter,");
 		System.out.println("the Percent Error is " + percentError + "%.");
 		System.out.println();
 		
@@ -80,14 +80,14 @@ public class Accuracy_Precision_Calculator {
 		//output standard error of the mean
 		double standardError = precisionRAD(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		System.out.println("Precision, via Standard Error of the Mean:");
-		System.out.println("For a calculated average of " + calculatedAverage);
-		System.out.println("the Standard Error of the Mean of these " + numberOfTrials + " trials is ±" + standardError + ".");
+		System.out.println("For a Mean calculated density of " + calculatedAverage + " grams per milliliter,");
+		System.out.println("the Standard Error of the Mean of these" + numberofTrials + " is ±" + standardError + ".");
 		System.out.println();
 		
 		//output relative average deviation
 		double relativeAverageDeviation = precisionSEM(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		System.out.println("Precision, via Percent Relative Average Deviation:");
-		System.out.println("For a calculated average of " + calculatedAverage);
+		System.out.println("For a Mean calculated density of " + calculatedAverage + " grams per milliliter,");
 		System.out.println("the Percent Relative Average Deviation of these " + numberOfTrials + " trials is " + relativeAverageDeviation + ".");
 	}
 	

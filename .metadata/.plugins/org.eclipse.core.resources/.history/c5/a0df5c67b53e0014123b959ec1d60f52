@@ -19,31 +19,18 @@ public class Accuracy_Precision_Calculator {
 		// TODO Auto-generated method stub
 		
 		//program functionality
-		System.out.println("This program calculates accuracy via Percent Error and precision via SEM and RAD.");
+		System.out.println("This program calculates the accuracy and precision of a P-20 micropipette, using the literature density of water.");
 		System.out.println();
 		
-		//request calculated average and literature value
+		//request calculated average density of water
 	//TODO What does "resource leak: consoleAverage never closed" mean? see also for console requests below.
 		Scanner consoleAverage = new Scanner(System.in);
 		System.out.print("What is the calculated average?: ");
 		double calculatedAverage = consoleAverage.nextDouble();
 			/* calcualtedAverage = 1.063 */
-		Scanner consoleLiteratureValue = new Scanner(System.in);
-		System.out.print("What is the literature value?: ");
-		double literatureValue = consoleLiteratureValue.nextDouble();
-			/* literatureValue = 1.00 */
-
-		//accuracy method
-		accuracy(calculatedAverage, literatureValue);
 		
-		//output percent error
-		double percentError = accuracy(calculatedAverage, literatureValue);
-		System.out.println();
-		System.out.println("Accuracy, via Percent Error:");
-		System.out.println("For a calcualted average of " + calculatedAverage);
-		System.out.println("and a literature value of " + literatureValue);
-		System.out.println("the Percent Error is " + percentError + "%.");
-		System.out.println();
+		//accuracy method
+		accuracy(calculatedAverage);
 		
 		//request number of trials
 		Scanner consoleNumberOfTrials = new Scanner(System.in);
@@ -77,32 +64,29 @@ public class Accuracy_Precision_Calculator {
 		precisionSEM(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		precisionRAD(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
 		
-		//output standard error of the mean
-		double standardError = precisionRAD(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
-		System.out.println("Precision, via Standard Error of the Mean:");
-		System.out.println("For a calculated average of " + calculatedAverage);
-		System.out.println("the Standard Error of the Mean of these " + numberOfTrials + " trials is ±" + standardError + ".");
-		System.out.println();
-		
-		//output relative average deviation
-		double relativeAverageDeviation = precisionSEM(calculatedAverage, numberOfTrials, x1, x2, x3, x4, x5, x6, x7, x8, x9);
-		System.out.println("Precision, via Percent Relative Average Deviation:");
-		System.out.println("For a calculated average of " + calculatedAverage);
-		System.out.println("the Percent Relative Average Deviation of these " + numberOfTrials + " trials is " + relativeAverageDeviation + ".");
 	}
 	
-	public static double accuracy(double calculatedAverage, double literatureValue) {
+	public static void accuracy(double calculatedAverage) {
 		//calculates percent error, as a measure of accuracy
 		
 		// define PercentError-specific variables
+		double exactValue;
 		double percentError;
 		
-		//calculate percent error
-		percentError = ((Math.abs(calculatedAverage - literatureValue) / literatureValue) * 100);
-			return percentError; //returns calculation to the main method to print
+		//calculate percent error for density of water
+		exactValue = 1.00;
+		percentError = ((Math.abs(calculatedAverage - exactValue) / exactValue) * 100);
+		
+		//output percent error
+		System.out.println();
+		System.out.println("Accuracy, via Percent Error:");
+		System.out.println("For a Mean calculated density of " + calculatedAverage + " grams per milliliter,");
+		System.out.println("and a literature value of " + exactValue + " grams per milliliter,");
+		System.out.println("the Percent Error is " + percentError + "%.");
+		System.out.println();
 	}	
 		
-	public static double precisionSEM(double calculatedAverage, int numberOfTrials, double x1, double x2, double x3, double x4, double x5, double x6, double x7, double x8, double x9) {
+	public static void precisionSEM(double calculatedAverage, int numberOfTrials, double x1, double x2, double x3, double x4, double x5, double x6, double x7, double x8, double x9) {
 		//calculates standard error of the mean, as a measure of precision
 		
 		//define SEM-specific variables
@@ -114,13 +98,19 @@ public class Accuracy_Precision_Calculator {
 	//TODO Any way to loop these calculations? See also: RAD method below.
 		sumOfSquares = ((x1 - calculatedAverage)*(x1 - calculatedAverage) + (x2 - calculatedAverage)*(x2 - calculatedAverage) + (x3 - calculatedAverage)*(x3 - calculatedAverage) + (x4 - calculatedAverage)*(x4 - calculatedAverage) + (x5 - calculatedAverage)*(x5 - calculatedAverage) + (x6 - calculatedAverage)*(x6 - calculatedAverage) + (x7 - calculatedAverage)*(x7 - calculatedAverage) + (x8 - calculatedAverage)*(x8 - calculatedAverage) + (x9 - calculatedAverage)*(x9 - calculatedAverage));
 
-		//calculate standard error of the mean
+		//calculate standard error of the mean for density of water
 		standardDeviation = (Math.sqrt(sumOfSquares / (numberOfTrials - 1) ));
 		standardError = (standardDeviation / Math.sqrt(numberOfTrials));
-			return standardError; //returns calculation to the main method to print	
+				
+		//output standard error of the mean
+		System.out.println("Precision, via Standard Error of the Mean:");
+		System.out.println("For a Mean calculated density of " + calculatedAverage + " grams per milliliter,");
+		System.out.println("the Standard Deviation of " + numberOfTrials + " trials is " + standardDeviation + ", ");
+		System.out.println("and the Standard Error of the Mean is ±" + standardError + ".");
+		System.out.println();
 	}
 
-	public static double precisionRAD(double calculatedAverage, int numberOfTrials, double x1, double x2, double x3, double x4, double x5, double x6, double x7, double x8, double x9) {
+	public static void precisionRAD(double calculatedAverage, int numberOfTrials, double x1, double x2, double x3, double x4, double x5, double x6, double x7, double x8, double x9) {
 		//calculates percent relative average deviation, as a measure of precision
 		
 		//define RAD-specific variables
@@ -128,11 +118,15 @@ public class Accuracy_Precision_Calculator {
 		double relativeAverageDeviation;
 		
 		//calculate average deviations
-	//TODO Any way to loop these calculations, as in SEM method above?
+	//TODO Any way to loop these calculations, as in SEM method above? If not, paste in through trial 9.
 		averageDeviations = (Math.abs(calculatedAverage - x1) + Math.abs(calculatedAverage - x2) + Math.abs(calculatedAverage - x3) + Math.abs(calculatedAverage - x4) + Math.abs(calculatedAverage - x5) + Math.abs(calculatedAverage - x6) + Math.abs(calculatedAverage - x7) + Math.abs(calculatedAverage - x8) + Math.abs(calculatedAverage - x9)) / numberOfTrials;
 		
 		//calculate percent RAD
 		relativeAverageDeviation = (averageDeviations / calculatedAverage) * 100;
-			return relativeAverageDeviation; //returns calculation to the main method to print
+		
+		//output relative average deviation
+		System.out.println("Precision, via Percent Relative Average Deviation:");
+		System.out.println("For a Mean calculated density of " + calculatedAverage + " grams per milliliter,");
+		System.out.println("the Percent Relative Average Deviation of these " + numberOfTrials + " trials is " + relativeAverageDeviation + ".");
 	}
 }
