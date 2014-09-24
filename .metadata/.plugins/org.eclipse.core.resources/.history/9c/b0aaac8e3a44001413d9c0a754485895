@@ -1,0 +1,40 @@
+/**
+ * Imports Scanner functionality.
+ */
+import java.util.*;
+
+/**
+ * This program calculates which Guild Wars 2 Race you are based on your responses.
+ */
+public class GW2RaceQuiz {
+	/**
+	 * This method keeps track of variables.
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//quiz title
+		System.out.println("Which Guild Wars 2 race are you?");
+		
+		//define attribute variables
+		double curiosity = 
+		double empathy = 
+		double herosim = 
+		double ingenuity = 
+		double pragmatism = 
+		
+		//following methods
+		traitQuestions(curiosity, empathy, heroism, ingenuity, pragmatism);
+		
+		//TODO create a method that keeps track of variables
+		//TODO create a method that asks questions and returns answers to main
+		
+		public static double traitQuestions(double curiosity, double empathy, double heroism, double ingenuity, double pragmatism) {
+			
+			
+		}
+		
+	}
+
+}
