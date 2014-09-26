@@ -5,8 +5,6 @@ import java.util.*;
 
 /**
  * This class calculates which Guild Wars 2 Race you are based on your responses.
- * 
- * @see Quiz: Daily MTG, borrowed phrasing and style of some questions <http://www.wizards.com/magic/quiz/quiz.aspx?x=mtg/quiz/guild>
  */
 public class GW2RaceQuiz {
 	/**
@@ -26,7 +24,6 @@ public class GW2RaceQuiz {
 		int heroism = 0;
 		int ingenuity = 0;
 		int pragmatism = 0;
-		int warring = 0;
 		
 		//define scanner for following question
 		Scanner console = new Scanner(System.in);
@@ -36,7 +33,7 @@ public class GW2RaceQuiz {
 		System.out.println();
 		
 		//commence tracking with question one
-		questionOne(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
+		questionOne(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism);	
 	}
 		
 	/**
@@ -49,18 +46,16 @@ public class GW2RaceQuiz {
 	 * @param heroism  The tracking variable for the heroism trait.
 	 * @param ingenuity  The tracking variable for the ingenuity trait.
 	 * @param pragmatism  The tracking variable for the pragmatism trait.
-	 * @param warring The tracking variable for the warring trait.
 	 * 
 	 * @return void
 	 */
-	public static void questionOne(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionOne(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism) {
 		//ask the first question and prompt for the first answer
 		System.out.println("Question 1");
 		System.out.println(" A: ");
 		System.out.println(" B: ");
 		System.out.println(" C: ");
 		System.out.println(" D: ");
-		System.out.println(" E: ");
 		
 		//recalculate value of each variable based on the first answer
 		if (answer.equalsIgnoreCase("A")) {
@@ -77,7 +72,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 2
-		questionTwo(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
+		questionTwo(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism);	
 	}
 	
 	/**
@@ -90,19 +85,17 @@ public class GW2RaceQuiz {
 	 * @param heroism  The tracking variable for the heroism trait.
 	 * @param ingenuity  The tracking variable for the ingenuity trait.
 	 * @param pragmatism  The tracking variable for the pragmatism trait.
-	 * @param warring The tracking variable for the warring trait.
 	 * 
 	 * @return void
 	 */
-	public static void questionTwo(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionTwo(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism) {
 		//ask the second question and prompt for the second answer
 		System.out.println("Question 2");
 		System.out.println(" A: ");
 		System.out.println(" B: ");
 		System.out.println(" C: ");
 		System.out.println(" D: ");
-		System.out.println(" E: ");
-
+				
 		//recalculate value of each variable based on the second answer
 		if (answer.equalsIgnoreCase("A")) {
 			empathy += 2;

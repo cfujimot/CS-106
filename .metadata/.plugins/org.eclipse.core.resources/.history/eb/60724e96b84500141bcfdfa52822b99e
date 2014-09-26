@@ -5,8 +5,6 @@ import java.util.*;
 
 /**
  * This class calculates which Guild Wars 2 Race you are based on your responses.
- * 
- * @see Quiz: Daily MTG, borrowed phrasing and style of some questions <http://www.wizards.com/magic/quiz/quiz.aspx?x=mtg/quiz/guild>
  */
 public class GW2RaceQuiz {
 	/**
@@ -60,7 +58,6 @@ public class GW2RaceQuiz {
 		System.out.println(" B: ");
 		System.out.println(" C: ");
 		System.out.println(" D: ");
-		System.out.println(" E: ");
 		
 		//recalculate value of each variable based on the first answer
 		if (answer.equalsIgnoreCase("A")) {
@@ -101,8 +98,7 @@ public class GW2RaceQuiz {
 		System.out.println(" B: ");
 		System.out.println(" C: ");
 		System.out.println(" D: ");
-		System.out.println(" E: ");
-
+				
 		//recalculate value of each variable based on the second answer
 		if (answer.equalsIgnoreCase("A")) {
 			empathy += 2;
