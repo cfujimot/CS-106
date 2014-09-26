@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class GW2RaceQuiz {
 	/**
-	 * This method initializes the program with a title and passes control flow to question one to begin method chaining.
+	 * This method keeps track of variables.
 	 * 
 	 * @param args
 	 */
@@ -25,7 +25,7 @@ public class GW2RaceQuiz {
 		int ingenuity = 0;
 		int pragmatism = 0;
 		
-		//define scanner for following question
+		//define scanner for each question
 		Scanner console = new Scanner(System.in);
 		String answer = console.nextLine();
 
@@ -109,8 +109,6 @@ public class GW2RaceQuiz {
 		} else {
 			ingenuity ++;
 		}
-		
-		//TODO pass control flow to question 3; at the end, pass control flow to printRace
 		
 	}
 	

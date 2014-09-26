@@ -110,8 +110,6 @@ public class GW2RaceQuiz {
 			ingenuity ++;
 		}
 		
-		//TODO pass control flow to question 3; at the end, pass control flow to printRace
-		
 	}
 	
 	public static void printRace(int curiosity, int empathy, int heroism, int ingenuity, int pragmatism) {

@@ -1,0 +1,71 @@
+/**
+ * Imports Scanner functionality.
+ */
+import java.util.*;
+
+/**
+ * This class calculates which Guild Wars 2 Race you are based on your responses.
+ */
+public class GW2RaceQuiz {
+	/**
+	 * This method keeps track of variables.
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//quiz title and instructions
+		System.out.println("Which Guild Wars 2 race are you?");
+		System.out.println("Please press the return key to continue.");
+
+		//define attribute variables
+		int curiosity = 0;
+		int empathy = 0;
+		int heroism = 0;
+		int ingenuity = 0;
+		int pragmatism = 0;
+		
+		//define scanner for each question
+		Scanner console = new Scanner(System.in);
+		String answer = console.nextLine();
+
+		System.out.println("Please enter the letter of your answer for each of the following questions.");
+		System.out.println();
+		
+		//commence tracking with question one
+		questionOne(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism);	
+	}
+		
+	public static void questionOne(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism) {
+		
+		//ask the first question and prompt for the first answer
+		System.out.println("Question 1");
+		System.out.println(" A: ");
+		System.out.println(" B: ");
+		System.out.println(" C: ");
+		System.out.println(" D: ");
+		
+		//recalcualte value of each variable based on the first answer
+		if (answer = "A") {
+			empathy += 2;
+			curiosity ++;
+		} else if (answer = "B") {
+			pragmatism += 2;
+			curiosity --;
+		} else {
+			ingenuity ++;
+		}
+		
+		//call question 2
+		questionTwo(console, curiosity, empathy, heroism, ingenuity, pragmatism);
+		
+	}
+	
+	
+	
+	public static void printRace(int curiosity, int empathy, int heroism, int ingenuity, int pragmatism) {
+		//TODO if else statements to calculate which race you are
+	}
+
+//closes the class
+}
