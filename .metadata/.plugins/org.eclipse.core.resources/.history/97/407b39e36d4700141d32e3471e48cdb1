@@ -18,6 +18,7 @@ public class GW2RaceQuiz {
 		
 		//quiz title and instructions
 		System.out.println("Which Guild Wars 2 race are you?");
+		System.out.println("Please press the return key to continue.");
 
 		//define attribute variables
 		int curiosity = 0;
@@ -29,12 +30,13 @@ public class GW2RaceQuiz {
 		
 		//define scanner for following question
 		Scanner console = new Scanner(System.in);
+		String answer = console.nextLine();
 
 		System.out.println("Please enter the letter of your answer for each of the following questions.");
 		System.out.println();
 		
 		//commence tracking with question one
-		questionOne(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
+		questionOne(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
 	}
 		
 	/**
@@ -51,7 +53,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionOne(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionOne(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the first question and prompt for the first answer
 		System.out.println("1. If you could create your ideal society, what would it be?");
 		System.out.println(" A: An isolated niche in nature where all beings are mentally connected and working toward a common purpose, but relatively unaware of what lies beyond their borders.");
@@ -79,7 +81,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 2
-		questionTwo(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
+		questionTwo(console, answer1, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
 	}
 	
 	/**
@@ -96,7 +98,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionTwo(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionTwo(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the second question and prompt for the second answer
 		System.out.println("2. What is your opinion on the merits of philosophy in the progress of society?");
 		System.out.println(" A: As an intelligent race, it’s the only way for us to move forward.");
@@ -104,16 +106,14 @@ public class GW2RaceQuiz {
 		System.out.println(" C: I don’t need philosophy; all you need to know is the good of the many versus the good of the few.");
 		System.out.println(" D: Philosophy is only worth considering if it helps me whip my minions into shape.");
 
-		String answer2 = console.nextLine();
-
 		//recalculate value of each variable based on the second answer
-		if (answer2.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			curiosity ++;
 			ingenuity ++;
 			pragmatism --;
-		} else if (answer2.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			pragmatism ++;
-		} else if (answer2.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			heroism ++;
 			empathy --;
 		} else {
@@ -121,7 +121,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 3
-		questionThree(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionThree(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -138,7 +138,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionThree(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionThree(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the third question and prompt for the third answer
 		System.out.println("3. How do you tend to work through problems that you encounter on a daily basis?");
 		System.out.println(" A: Running into them headlong a few times seems to work well enough!");
@@ -146,21 +146,19 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Daily problems don’t interest me unless they require some show of skill and honor.");
 		System.out.println(" D: I devise a machine to do it for me.");
 
-		String answer3 = console.nextLine();
-
 		//recalculate value of each variable based on the third answer
-		if (answer3.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			warring ++;
-		} else if (answer3.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			pragmatism ++;
-		} else if (answer3.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			heroism ++;
 		} else {
 			ingenuity ++;
 		}
 		
 		//passes control flow to question 4
-		questionFour(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionFour(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -177,7 +175,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionFour(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionFour(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the fourth question and prompt for the fourth answer
 		System.out.println("4. What would you do to inspire a crowd?");
 		System.out.println(" A: Present the facts of my research and allow them to speak for themselves.");
@@ -185,21 +183,19 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Rally them around a common cause— and by around common cause, I mean against a common enemy, which they believe to be the scourge of our existence.");
 		System.out.println(" D: I’d inspire them believe in the honor and righteousness of my cause and in the integrity of the city, which I would lay down my life to protect.");
 
-		String answer4 = console.nextLine();
-
 		//recalculate value of each variable based on the fourth answer
-		if (answer4.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			pragmatism ++;
-		} else if (answer4.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			ingenuity ++;
-		} else if (answer4.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			warring ++;
 		} else {
 			heroism ++;
 		}
 		
 		//passes control flow to question 5
-		questionFive(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionFive(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -216,7 +212,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionFive(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionFive(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the fifth question and prompt for the fifth answer
 		System.out.println("5. How should an army be organized?");
 		System.out.println(" A: It should be ordered into ranks of infantry and cavalry, rallied around a single inspiring leader.");
@@ -224,15 +220,13 @@ public class GW2RaceQuiz {
 		System.out.println(" C: In order for the city to be at peace, we should discourage fighting, and turn resources that would be funneled into the army instead toward the betterment of the disadvantaged and the comfort of the elderly.");
 		System.out.println(" D: The primary goal of the army when expanding into new territory should be to gather information without destroying natural resources, such that the college can learn as much as possible about our world— only if it is attacked should it retaliate.");
 
-		String answer5 = console.nextLine();
-
 		//recalculate value of each variable based on the fifth answer
-		if (answer5.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			heroism ++;
 			pragmatism ++;
-		} else if (answer5.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			warring +=2;
-		} else if (answer5.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			empathy ++;
 			warring --;
 		} else {
@@ -240,7 +234,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 6
-		questionSix(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionSix(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -257,25 +251,23 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionSix(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionSix(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the sixth question and prompt for the sixth answer
 		System.out.println("6. Someone challenges you to a duel in the middle of a crowded street— what do you do?");
 		System.out.println(" A: If they want to fight me fine— but first, I have a duty to clear all bystanders to a safe distance before my spectacular display.");
 		System.out.println(" B: I’d chop out his tongue for daring to challenge me, and likely his fighting hand while I’m at it.");
-		System.out.println(" C: I’d accept, though I currently have no weapons in hand; as my attacker is charging me, I’d trigger a cleverly designed telekinetic detonation of my own personal design— that should teach him to mess with a senior graduate of the Mages’ College.");
+		System.out.println(" C: ’d accept, though I currently have no weapons in hand; as my attacker is charging me, I’d trigger a cleverly designed telekinetic detonation of my own personal design— that should teach him to mess with a senior graduate of the Mages’ College.");
 		System.out.println(" D: If we could just talk out our dispute, I’m sure we could come to a mutual understanding without the need of weapons.");
 
-		String answer6 = console.nextLine();
-
 		//recalculate value of each variable based on the sixth answer
-		if (answer6.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			empathy ++;
 			heroism ++;
 			pragmatism ++;
-		} else if (answer6.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			warring +=2;
 			pragmatism --;
-		} else if (answer6.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			ingenuity ++;
 		} else {
 			empathy ++;
@@ -283,7 +275,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 7
-		questionSeven(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionSeven(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -300,7 +292,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionSeven(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionSeven(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the seventh question and prompt for the seventh answer
 		System.out.println("7. If you were offered control over one aspect of the city, which would it be?");
 		System.out.println(" A: The universities, to gain more knowledge and in turn teach the following generation.");
@@ -308,15 +300,13 @@ public class GW2RaceQuiz {
 		System.out.println(" C: The army, to protect the city.");
 		System.out.println(" D: The governmental body, to parse out responsibility to those beneath me.");
 
-		String answer7 = console.nextLine();
-
 		//recalculate value of each variable based on the seventh answer
-		if (answer7.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			curiosity ++;
 			ingenuity ++;
-		} else if (answer7.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			empathy ++;
-		} else if (answer7.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			warring +=2;
 			heroism ++;
 		} else {
@@ -324,7 +314,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 8
-		questionEight(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionEight(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -341,7 +331,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionEight(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionEight(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the eighth question and prompt for the eighth answer
 		System.out.println("8. Given free reign and no obligations, how would you choose to spend your life?");
 		System.out.println(" A: Helping the sick or underprivileged to make their lives more comfortable.");
@@ -349,15 +339,13 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Death is merely an obstacle; I would devise a path toward immortality.");
 		System.out.println(" D: I would live my life on a whim, cutting down anyone who stood in my way.");
 
-		String answer8 = console.nextLine();
-
 		//recalculate value of each variable based on the eighth answer
-		if (answer8.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			empathy +=2;
 			heroism ++;
-		} else if (answer8.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			curiosity ++;
-		} else if (answer8.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			ingenuity +=2;
 			pragmatism --;
 		} else {
@@ -366,7 +354,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 9
-		questionNine(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionNine(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -383,7 +371,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionNine(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionNine(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the ninth question and prompt for the ninth answer
 		System.out.println("9. You come across what appears to be someone being harassed by guards in the street— what do you do?");
 		System.out.println(" A: I step in, one hand on my sword hilt and the other on my coin purse— perhaps they can be…convinced.");
@@ -391,16 +379,14 @@ public class GW2RaceQuiz {
 		System.out.println(" C: I try to win the guards over with a passionate articulation of the victim’s story!");
 		System.out.println(" D: If the concern doesn’t affect me, it’s not my problem— keep on walking>");
 
-		String answer9 = console.nextLine();
-
 		//recalculate value of each variable based on the ninth answer
-		if (answer9.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			heroism ++;
 			ingenuity ++;
-		} else if (answer9.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			pragmatism ++;
 			warring --;
-		} else if (answer9.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			heroism +=2;
 			empathy ++;
 		} else {
@@ -409,7 +395,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 10
-		questionTen(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionTen(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -426,7 +412,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionTen(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionTen(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the tenth question and prompt for the tenth answer
 		System.out.println("10. If someone were to show up on your doorstep tomorrow morning and say that an alternate universe existed, what would you do?");
 		System.out.println(" A: New intelligent lifeforms and technology to be gained? Take me there immediately!");
@@ -434,16 +420,14 @@ public class GW2RaceQuiz {
 		System.out.println(" C: It clearly poses a threat to our society— we should inform the appropriate authorities and prepare to defend our borders.");
 		System.out.println(" D: I would prepare a scouting party to explore and bring back anything that could be useful to our society.");
 
-		String answer10 = console.nextLine();
-
 		//recalculate value of each variable based on the tenth answer
-		if (answer10.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			curiosity +=2;
 			pragmatism --;
-		} else if (answer10.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			ingenuity ++;
 			empathy --;
-		} else if (answer10.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			pragmatism ++;
 			warring ++;
 		} else {
@@ -452,7 +436,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 11
-		questionEleven(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionEleven(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -469,7 +453,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionEleven(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionEleven(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the eleventh question and prompt for the eleventh answer
 		System.out.println("11. If you lived in a fantasy world, which side quests would you do?");
 		System.out.println(" A: Anything that involves helping others, but not at the cost of killing innocent beings.");
@@ -477,15 +461,13 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Only those that would further my knowledge of the world.");
 		System.out.println(" D: Anything that helps me level up, improves my gear, and gives me an advantage over the next guy.");
 
-		String answer11 = console.nextLine();
-
 		//recalculate value of each variable based on the eleventh answer
-		if (answer11.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			empathy +=2;
-		} else if (answer11.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			heroism +=2;
 			warring ++;
-		} else if (answer11.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			curiosity ++;
 			empathy ++;
 		} else {
@@ -494,7 +476,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 12
-		questionTwelve(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionTwelve(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -511,7 +493,7 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionTwelve(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionTwelve(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the twelfth question and prompt for the twelfth answer
 		System.out.println("12. If you were engaged in a heated debate with someone, what would you do?");
 		System.out.println(" A: Lay out the facts and ask him/her to do the same. Whoever has the most facts on their side is clearly in the right.");
@@ -519,14 +501,12 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Listen carefully to his or her argument, so I could come up with the most convincing and persuasive counterarguments, even if I’d have to bend the facts a little to fit my side. Allowing the opposition to believe what they infer isn’t technically lying, right?");
 		System.out.println(" D: I’m not one for heated debates; I’d rather have a civil discussion with someone, because I’m legitimately interested in their opinions and want to learn more about viewpoints other than my own .");
 
-		String answer12 = console.nextLine();
-
 		//recalculate value of each variable based on the twelfth answer
-		if (answer12.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			pragmatism ++;
-		} else if (answer12.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			warring +=2;
-		} else if (answer12.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			heroism ++;
 		} else {
 			curiosity ++;
@@ -534,7 +514,7 @@ public class GW2RaceQuiz {
 		}
 		
 		//passes control flow to question 13
-		questionThirteen(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		questionThirteen(console, answer, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
 	/**
@@ -551,23 +531,21 @@ public class GW2RaceQuiz {
 	 * 
 	 * @return void
 	 */
-	public static void questionThirteen(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void questionThirteen(Scanner console, String answer, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the thirteen question and prompt for the thirteen answer
 		System.out.println("13. If someone close to you were to come to harm, what would you do?");
 		System.out.println(" A: Ensure that their every need was taken care of until I could help them back to health— my duty lies with my friends, and not in revenge upon my enemies.");
 		System.out.println(" B: Gather all the physical evidence that might point to the aggressor, then fingerprint all suspects and see the culprit brought to justice through sanctioned channels.");
 		System.out.println(" C: Seek out their attacker and take vengeance on my own terms.");
 		System.out.println(" D: Devise a way to hack into the city’s power source and turn all its resources to finding the one responsible.");
-		
-		String answer13 = console.nextLine();
 
 		//recalculate value of each variable based on the thirteen answer
-		if (answer13.equalsIgnoreCase("A")) {
+		if (answer.equalsIgnoreCase("A")) {
 			curiosity ++;
-		} else if (answer13.equalsIgnoreCase("B")) {
+		} else if (answer.equalsIgnoreCase("B")) {
 			heroism ++;
 			pragmatism ++;
-		} else if (answer13.equalsIgnoreCase("C")) {
+		} else if (answer.equalsIgnoreCase("C")) {
 			heroism ++;
 			warring ++;
 		} else {
@@ -583,12 +561,12 @@ public class GW2RaceQuiz {
 		//TODO if else statements to calculate which race you are
 		
 		System.out.println("Your results are as follows:");
-		System.out.println("Curiosity: " + curiosity);
-		System.out.println("Empathy: " + empathy);
-		System.out.println("Heroism: " + heroism);
-		System.out.println("Ingenuity: " + ingenuity);
-		System.out.println("Pragmatism: " + pragmatism);
-		System.out.println("Warring: " + warring);
+		System.out.println(curiosity);
+		System.out.println(empathy);
+		System.out.println(heroism);
+		System.out.println(ingenuity);
+		System.out.println(pragmatism);
+		System.out.println(warring);
 	}
 
 //closes the class

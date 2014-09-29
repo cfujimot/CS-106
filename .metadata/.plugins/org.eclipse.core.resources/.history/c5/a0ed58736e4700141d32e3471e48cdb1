@@ -262,7 +262,7 @@ public class GW2RaceQuiz {
 		System.out.println("6. Someone challenges you to a duel in the middle of a crowded street— what do you do?");
 		System.out.println(" A: If they want to fight me fine— but first, I have a duty to clear all bystanders to a safe distance before my spectacular display.");
 		System.out.println(" B: I’d chop out his tongue for daring to challenge me, and likely his fighting hand while I’m at it.");
-		System.out.println(" C: I’d accept, though I currently have no weapons in hand; as my attacker is charging me, I’d trigger a cleverly designed telekinetic detonation of my own personal design— that should teach him to mess with a senior graduate of the Mages’ College.");
+		System.out.println(" C: ’d accept, though I currently have no weapons in hand; as my attacker is charging me, I’d trigger a cleverly designed telekinetic detonation of my own personal design— that should teach him to mess with a senior graduate of the Mages’ College.");
 		System.out.println(" D: If we could just talk out our dispute, I’m sure we could come to a mutual understanding without the need of weapons.");
 
 		String answer6 = console.nextLine();
@@ -583,12 +583,12 @@ public class GW2RaceQuiz {
 		//TODO if else statements to calculate which race you are
 		
 		System.out.println("Your results are as follows:");
-		System.out.println("Curiosity: " + curiosity);
-		System.out.println("Empathy: " + empathy);
-		System.out.println("Heroism: " + heroism);
-		System.out.println("Ingenuity: " + ingenuity);
-		System.out.println("Pragmatism: " + pragmatism);
-		System.out.println("Warring: " + warring);
+		System.out.println(curiosity);
+		System.out.println(empathy);
+		System.out.println(heroism);
+		System.out.println(ingenuity);
+		System.out.println(pragmatism);
+		System.out.println(warring);
 	}
 
 //closes the class
