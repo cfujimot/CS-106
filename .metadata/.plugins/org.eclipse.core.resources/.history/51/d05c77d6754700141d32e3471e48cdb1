@@ -607,23 +607,17 @@ public class GW2RaceQuiz {
 		if (ingenuity > curiosity && ingenuity > empathy && ingenuity > heroism && ingenuity > pragmatism && ingenuity > warring
 				&& pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism > warring
 				&& curiosity > empathy && curiosity > heroism && curiosity > warring) {
-			System.out.println("You are an Asura!");
-		} else if (pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism > ingenuity && pragmatism > warring
-				&& warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity
-				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > heroism) {
-			System.out.println("You are a Char!");
-		} else if (heroism > curiosity && heroism > empathy && heroism > ingenuity && heroism > pragmatism && heroism > warring
-				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > pragmatism && ingenuity > warring
-				&& empathy > curiosity && empathy > pragmatism && empathy > warring) {
-			System.out.println("You are a Human!");
-		} else if (warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity && warring > pragmatism
-				&& curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism
-				&& heroism > empathy && heroism > ingenuity && heroism > pragmatism) {
-			System.out.println("You are a Norn!");
+			System.out.println("You belong to the Asura!");
+		} else if () {
+			System.out.println("You belong to the Char!");
+		} else if () {
+			System.out.println("You belong to the Humans!");
+		} else if () {
+			System.out.println("You belong to the Norn!");
 		} else if (curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism && curiosity > warring
 				&& empathy > heroism && empathy > ingenuity && empathy > pragmatism && empathy > warring
 				&& ingenuity > heroism && ingenuity > pragmatism && ingenuity > warring) {
-			System.out.println("You are a Sylvari!");
+			System.out.println("You belong to the Sylvari!");
 		} else {
 			System.out.println("Your results are inconclusive.");
 		}

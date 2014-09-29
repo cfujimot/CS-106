@@ -612,13 +612,9 @@ public class GW2RaceQuiz {
 				&& warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity
 				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > heroism) {
 			System.out.println("You are a Char!");
-		} else if (heroism > curiosity && heroism > empathy && heroism > ingenuity && heroism > pragmatism && heroism > warring
-				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > pragmatism && ingenuity > warring
-				&& empathy > curiosity && empathy > pragmatism && empathy > warring) {
+		} else if () {
 			System.out.println("You are a Human!");
-		} else if (warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity && warring > pragmatism
-				&& curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism
-				&& heroism > empathy && heroism > ingenuity && heroism > pragmatism) {
+		} else if () {
 			System.out.println("You are a Norn!");
 		} else if (curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism && curiosity > warring
 				&& empathy > heroism && empathy > ingenuity && empathy > pragmatism && empathy > warring

@@ -31,6 +31,7 @@ public class GW2RaceQuiz {
 		Scanner console = new Scanner(System.in);
 
 		System.out.println("Please enter the letter of your answer for each of the following questions.");
+		System.out.println();
 		
 		//commence tracking with question one
 		questionOne(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
@@ -52,7 +53,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionOne(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the first question and prompt for the first answer
-		System.out.println();
 		System.out.println("1. If you could create your ideal society, what would it be?");
 		System.out.println(" A: An isolated niche in nature where all beings are mentally connected and working toward a common purpose, but relatively unaware of what lies beyond their borders.");
 		System.out.println(" B: A grand city-state where alliances are won through skirmishes and honor is highly valued.");
@@ -98,7 +98,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionTwo(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the second question and prompt for the second answer
-		System.out.println();
 		System.out.println("2. What is your opinion on the merits of philosophy in the progress of society?");
 		System.out.println(" A: As an intelligent race, it’s the only way for us to move forward.");
 		System.out.println(" B: It’s useful to think about, but only if we can apply its principles to real problems.");
@@ -141,7 +140,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionThree(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the third question and prompt for the third answer
-		System.out.println();
 		System.out.println("3. How do you tend to work through problems that you encounter on a daily basis?");
 		System.out.println(" A: Running into them headlong a few times seems to work well enough!");
 		System.out.println(" B: I lay out a step-by-step plan and follow it to the letter.");
@@ -181,7 +179,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionFour(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the fourth question and prompt for the fourth answer
-		System.out.println();
 		System.out.println("4. What would you do to inspire a crowd?");
 		System.out.println(" A: Present the facts of my research and allow them to speak for themselves.");
 		System.out.println(" B: Devise an intelligent creation or wild spectacle to accompany my presentation— crowds are always more likely to believe given an awe factor.");
@@ -221,7 +218,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionFive(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the fifth question and prompt for the fifth answer
-		System.out.println();
 		System.out.println("5. How should an army be organized?");
 		System.out.println(" A: It should be ordered into ranks of infantry and cavalry, rallied around a single inspiring leader.");
 		System.out.println(" B: Whoever makes the kill, eats the kill!");
@@ -263,7 +259,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionSix(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the sixth question and prompt for the sixth answer
-		System.out.println();
 		System.out.println("6. Someone challenges you to a duel in the middle of a crowded street— what do you do?");
 		System.out.println(" A: If they want to fight me fine— but first, I have a duty to clear all bystanders to a safe distance before my spectacular display.");
 		System.out.println(" B: I’d chop out his tongue for daring to challenge me, and likely his fighting hand while I’m at it.");
@@ -307,7 +302,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionSeven(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the seventh question and prompt for the seventh answer
-		System.out.println();
 		System.out.println("7. If you were offered control over one aspect of the city, which would it be?");
 		System.out.println(" A: The universities, to gain more knowledge and in turn teach the following generation.");
 		System.out.println(" B: The religious body, to offer consolation to the populous.");
@@ -349,7 +343,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionEight(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the eighth question and prompt for the eighth answer
-		System.out.println();
 		System.out.println("8. Given free reign and no obligations, how would you choose to spend your life?");
 		System.out.println(" A: Helping the sick or underprivileged to make their lives more comfortable.");
 		System.out.println(" B: Go to the ends of the earth to learn as much about the world as possible, and compile it all for others to follow in my footsteps before I died.");
@@ -392,7 +385,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionNine(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the ninth question and prompt for the ninth answer
-		System.out.println();
 		System.out.println("9. You come across what appears to be someone being harassed by guards in the street— what do you do?");
 		System.out.println(" A: I step in, one hand on my sword hilt and the other on my coin purse— perhaps they can be…convinced.");
 		System.out.println(" B: I interject politely and see if I can help solve the dispute— no one will benefit from fighting.");
@@ -436,7 +428,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionTen(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the tenth question and prompt for the tenth answer
-		System.out.println();
 		System.out.println("10. If someone were to show up on your doorstep tomorrow morning and say that an alternate universe existed, what would you do?");
 		System.out.println(" A: New intelligent lifeforms and technology to be gained? Take me there immediately!");
 		System.out.println(" B: I don’t care much for the creatures that exist there, but I’d bring back any new technology I could and study the hell out of it.");
@@ -480,7 +471,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionEleven(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the eleventh question and prompt for the eleventh answer
-		System.out.println();
 		System.out.println("11. If you lived in a fantasy world, which side quests would you do?");
 		System.out.println(" A: Anything that involves helping others, but not at the cost of killing innocent beings.");
 		System.out.println(" B: Saving a damsel in distress? Count me in!");
@@ -523,7 +513,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionTwelve(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the twelfth question and prompt for the twelfth answer
-		System.out.println();
 		System.out.println("12. If you were engaged in a heated debate with someone, what would you do?");
 		System.out.println(" A: Lay out the facts and ask him/her to do the same. Whoever has the most facts on their side is clearly in the right.");
 		System.out.println(" B: I’d hammer my point home. Literally.");
@@ -564,7 +553,6 @@ public class GW2RaceQuiz {
 	 */
 	public static void questionThirteen(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		//ask the thirteen question and prompt for the thirteen answer
-		System.out.println();
 		System.out.println("13. If someone close to you were to come to harm, what would you do?");
 		System.out.println(" A: Ensure that their every need was taken care of until I could help them back to health— my duty lies with my friends, and not in revenge upon my enemies.");
 		System.out.println(" B: Gather all the physical evidence that might point to the aggressor, then fingerprint all suspects and see the culprit brought to justice through sanctioned channels.");
@@ -594,7 +582,6 @@ public class GW2RaceQuiz {
 	public static void printRace(int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		 
 		//prints the cumulative trait scores
-		System.out.println();
 		System.out.println("Your results are as follows:");
 		System.out.println("Curiosity: " + curiosity);
 		System.out.println("Empathy: " + empathy);
@@ -607,23 +594,17 @@ public class GW2RaceQuiz {
 		if (ingenuity > curiosity && ingenuity > empathy && ingenuity > heroism && ingenuity > pragmatism && ingenuity > warring
 				&& pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism > warring
 				&& curiosity > empathy && curiosity > heroism && curiosity > warring) {
-			System.out.println("You are an Asura!");
-		} else if (pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism > ingenuity && pragmatism > warring
-				&& warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity
-				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > heroism) {
-			System.out.println("You are a Char!");
-		} else if (heroism > curiosity && heroism > empathy && heroism > ingenuity && heroism > pragmatism && heroism > warring
-				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > pragmatism && ingenuity > warring
-				&& empathy > curiosity && empathy > pragmatism && empathy > warring) {
-			System.out.println("You are a Human!");
-		} else if (warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity && warring > pragmatism
-				&& curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism
-				&& heroism > empathy && heroism > ingenuity && heroism > pragmatism) {
-			System.out.println("You are a Norn!");
+			System.out.println("You belong to the Asura!");
+		} else if () {
+			System.out.println("You belong to the Char!");
+		} else if () {
+			System.out.println("You belong to the Humans!");
+		} else if () {
+			System.out.println("You belong to the Norn!");
 		} else if (curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism && curiosity > warring
 				&& empathy > heroism && empathy > ingenuity && empathy > pragmatism && empathy > warring
 				&& ingenuity > heroism && ingenuity > pragmatism && ingenuity > warring) {
-			System.out.println("You are a Sylvari!");
+			System.out.println("You belong to the Sylvari!");
 		} else {
 			System.out.println("Your results are inconclusive.");
 		}
