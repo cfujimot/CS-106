@@ -581,7 +581,7 @@ public class GW2RaceQuiz {
 
 		//recalculate value of each variable based on the thirteen answer
 		if (answer13.equalsIgnoreCase("A")) {
-			empathy +=2;
+			empathy ++;
 		} else if (answer13.equalsIgnoreCase("B")) {
 			pragmatism +=2;
 			heroism ++;

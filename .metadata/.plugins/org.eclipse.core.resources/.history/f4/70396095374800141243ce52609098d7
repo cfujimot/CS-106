@@ -408,7 +408,7 @@ public class GW2RaceQuiz {
 			ingenuity ++;
 			warring ++;
 		} else if (answer9.equalsIgnoreCase("B")) {
-			empathy +=2;
+			empathy ++;
 			pragmatism ++;
 			warring --;
 		} else if (answer9.equalsIgnoreCase("C")) {
@@ -461,7 +461,7 @@ public class GW2RaceQuiz {
 			warring ++;
 		} else {
 			empathy +=2;
-			curiosity +=2;
+			curiosity ++;
 		}
 		
 		//passes control flow to question 11
@@ -581,7 +581,7 @@ public class GW2RaceQuiz {
 
 		//recalculate value of each variable based on the thirteen answer
 		if (answer13.equalsIgnoreCase("A")) {
-			empathy +=2;
+			empathy ++;
 		} else if (answer13.equalsIgnoreCase("B")) {
 			pragmatism +=2;
 			heroism ++;
