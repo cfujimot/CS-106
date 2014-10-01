@@ -184,7 +184,7 @@ public class GW2RaceQuiz {
 		System.out.println(" A: Take stock of my audience, then speak to their individual beliefs.");
 		System.out.println(" B: Devise an intelligent creation or wild spectacle to accompany my presentation.");
 		System.out.println(" C: Rally them against a common enemy, which they believe to be the scourge of our existence.");
-		System.out.println(" D: I’d inspire them believe in my honor and righteousness, and therefore the rightousness of my cause.");
+		System.out.println(" D: I’d inspire them to believe in my honor and righteousness, and therefore the rightousness of my cause.");
 
 		String answer4 = console.nextLine();
 
@@ -486,7 +486,7 @@ public class GW2RaceQuiz {
 		//ask the eleventh question and prompt for the eleventh answer
 		System.out.println();
 		System.out.println("11. If you lived in a fantasy world, which side quests would you do?");
-		System.out.println(" A: Those that involves helping others, but not at the cost of killing innocent beings.");
+		System.out.println(" A: Those that involve helping others, but not at the cost of killing innocent beings.");
 		System.out.println(" B: Endless action? Saving a damsel in distress? Count me in!");
 		System.out.println(" C: Only those that would further my knowledge of the world and help my clever designs.");
 		System.out.println(" D: Anything that helps me level up, improves my gear, and gives me an advantage over the next guy.");
