@@ -38,6 +38,7 @@ public class FileManipulator {
 				//updates checking variable
 				checking = processChecking(fileReader.nextLine(), transactionType, checking);
 			} else if (accountType.equals("Savings")) {
+				System.out.println(fileReader.nextLine());
 				processSavings(fileReader.nextLine(), transactionType, savings);
 				//updates savings variable
 				savings = processSavings(fileReader.nextLine(), transactionType, savings);
@@ -112,7 +113,7 @@ public class FileManipulator {
 		transactionType = savingsProcessor.next();
 
 		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
+		System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
 			savingsProcessor.next();

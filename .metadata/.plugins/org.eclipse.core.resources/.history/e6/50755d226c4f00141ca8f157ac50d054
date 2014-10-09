@@ -77,7 +77,7 @@ public class FileManipulator {
 		transactionType = checkingProcessor.next();
 
 		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
+		System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
 			checkingProcessor.next();

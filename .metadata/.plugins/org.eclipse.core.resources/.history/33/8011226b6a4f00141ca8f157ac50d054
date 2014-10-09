@@ -45,8 +45,8 @@ public class FileManipulator {
 				processCredit(fileReader.nextLine(), transactionType, credit);
 				//updates credit variable
 				credit = processCredit(fileReader.nextLine(), transactionType, credit);
-			}	
-			//is this necessary? fileReader.nextLine();
+			}			
+				
 		}
 		
 		fileReader.close();
@@ -70,15 +70,12 @@ public class FileManipulator {
 		//scanner to read through the line passed in from fileReader
 		Scanner checkingProcessor = new Scanner(line);
 
-		//CHECK: how many times does it loop through the checking method?
-		//System.out.println("checking");
+		//check: how many times does it loop through the checking method?
+		System.out.println("checking");
 		
 		//reads the type of transaction and chooses appropriate calculation
 		transactionType = checkingProcessor.next();
 
-		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
-		
 		if (transactionType.equals("Opening")) {
 			checkingProcessor.next();
 			checking += checkingProcessor.nextDouble();
@@ -103,17 +100,13 @@ public class FileManipulator {
 	public static double processSavings(String line, String transactionType, double savings) {
 		//scanner to read through the line passed in from fileReader
 		Scanner savingsProcessor = new Scanner(line);
-		
-		System.out.println(savingsProcessor.nextLine());
-		//CHECK: how many times does it loop through the savings method?
-		//System.out.println("savings");
+				
+		//check: how many times does it loop through the savings method?
+		System.out.println("savings");
 				
 		//reads the type of transaction and chooses appropriate calculation
 		transactionType = savingsProcessor.next();
 
-		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
-		
 		if (transactionType.equals("Opening")) {
 			savingsProcessor.next();
 			savings += savingsProcessor.nextDouble();
@@ -138,16 +131,12 @@ public class FileManipulator {
 	public static double processCredit(String line, String transactionType, double credit) {
 		//scanner to read through the line passed in from fileReader
 		Scanner creditProcessor = new Scanner(line);
-		creditProcessor.next();
-		
-		//CHECK: how many times does it loop through the credit method?
-		//System.out.println("credit");
+				
+		//check: how many times does it loop through the credit method?
+		System.out.println("credit");
 		
 		//reads the type of transaction and chooses appropriate calculation
 		transactionType = creditProcessor.next();
-		
-		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
 			creditProcessor.next();

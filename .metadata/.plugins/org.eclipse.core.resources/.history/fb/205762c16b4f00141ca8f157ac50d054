@@ -112,7 +112,7 @@ public class FileManipulator {
 		transactionType = savingsProcessor.next();
 
 		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
+		System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
 			savingsProcessor.next();

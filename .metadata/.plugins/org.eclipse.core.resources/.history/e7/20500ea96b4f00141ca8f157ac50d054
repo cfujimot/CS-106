@@ -103,8 +103,7 @@ public class FileManipulator {
 	public static double processSavings(String line, String transactionType, double savings) {
 		//scanner to read through the line passed in from fileReader
 		Scanner savingsProcessor = new Scanner(line);
-		
-		System.out.println(savingsProcessor.nextLine());
+				
 		//CHECK: how many times does it loop through the savings method?
 		//System.out.println("savings");
 				
@@ -112,7 +111,7 @@ public class FileManipulator {
 		transactionType = savingsProcessor.next();
 
 		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
+		System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
 			savingsProcessor.next();

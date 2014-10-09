@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_eo1PkU9lEeSdAONB3MOW8w" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_eo1Pkk9lEeSdAONB3MOW8w" bindingContexts="_eo1PlE9lEeSdAONB3MOW8w">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Accuracy_Precision_Calculator.java&quot; tooltip=&quot;Project 1 Calculator/src/Accuracy_Precision_Calculator.java&quot;>&#xA;&lt;persistable path=&quot;/Project 1 Calculator/src/Accuracy_Precision_Calculator.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileManipulator.java&quot; tooltip=&quot;Project 4 File Manipulation/src/FileManipulator.java&quot;>&#xA;&lt;persistable path=&quot;/Project 4 File Manipulation/src/FileManipulator.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;input.txt&quot; tooltip=&quot;Project 4 File Manipulation/src/input.txt&quot;>&#xA;&lt;persistable path=&quot;/Project 4 File Manipulation/src/input.txt&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Accuracy_Precision_Calculator.java&quot; tooltip=&quot;Project 1 Calculator/src/Accuracy_Precision_Calculator.java&quot;>&#xA;&lt;persistable path=&quot;/Project 1 Calculator/src/Accuracy_Precision_Calculator.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileManipulator.java&quot; tooltip=&quot;Project 4 File Manipulation/src/FileManipulator.java&quot;>&#xA;&lt;persistable path=&quot;/Project 4 File Manipulation/src/FileManipulator.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_eo1Pkk9lEeSdAONB3MOW8w" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_fHJjQU9lEeSdAONB3MOW8w" label="%trimmedwindow.label.eclipseSDK" x="8" y="22" width="1349" height="746">
@@ -80,8 +80,8 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_fO3U2k9lEeSdAONB3MOW8w" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_fO2GsE9lEeSdAONB3MOW8w"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_fO3U209lEeSdAONB3MOW8w" containerData="7500" selectedElement="_fO3U4k9lEeSdAONB3MOW8w">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_fO3U3E9lEeSdAONB3MOW8w" containerData="7500" selectedElement="_fO3U3U9lEeSdAONB3MOW8w" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_fO3U209lEeSdAONB3MOW8w" containerData="7500" selectedElement="_fO3U3E9lEeSdAONB3MOW8w">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_fO3U3E9lEeSdAONB3MOW8w" containerData="7348" selectedElement="_fO3U3U9lEeSdAONB3MOW8w" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_fO3U3U9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_fOh9oE9lEeSdAONB3MOW8w"/>
                 <children xsi:type="basic:PartStack" xmi:id="_fO3U3k9lEeSdAONB3MOW8w" elementId="right" containerData="2500" selectedElement="_fO3U309lEeSdAONB3MOW8w">
                   <tags>newtablook</tags>
@@ -91,7 +91,7 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_fO3U4U9lEeSdAONB3MOW8w" elementId="org.eclipse.ant.ui.views.AntView" toBeRendered="false" ref="_fO1foE9lEeSdAONB3MOW8w"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_fO3U4k9lEeSdAONB3MOW8w" elementId="bottom" containerData="2500" selectedElement="_fO3U509lEeSdAONB3MOW8w">
+              <children xsi:type="basic:PartStack" xmi:id="_fO3U4k9lEeSdAONB3MOW8w" elementId="bottom" containerData="2652" selectedElement="_fO3U509lEeSdAONB3MOW8w">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_fO3U409lEeSdAONB3MOW8w" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_fOsVsE9lEeSdAONB3MOW8w"/>
@@ -131,7 +131,7 @@
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_gkyl8E9lEeSdAONB3MOW8w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="FileManipulator.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileManipulator.java&quot; partName=&quot;FileManipulator.java&quot; title=&quot;FileManipulator.java&quot; tooltip=&quot;Project 4 File Manipulation/src/FileManipulator.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project 4 File Manipulation/src/FileManipulator.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3336&quot; selectionTopPixel=&quot;290&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FileManipulator.java&quot; partName=&quot;FileManipulator.java&quot; title=&quot;FileManipulator.java&quot; tooltip=&quot;Project 4 File Manipulation/src/FileManipulator.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project 4 File Manipulation/src/FileManipulator.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2621&quot; selectionTopPixel=&quot;1217&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -250,7 +250,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIYSUE9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_fIfAAE9lEeSdAONB3MOW8w" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_epnSuE9lEeSdAONB3MOW8w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_GbflAE9pEeSvsrH7ZsZOow" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_epnSuE9lEeSdAONB3MOW8w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIY5YE9lEeSdAONB3MOW8w" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -274,7 +274,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIZgcE9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_fIj4g09lEeSdAONB3MOW8w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_epldoE9lEeSdAONB3MOW8w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_GblEkk9pEeSvsrH7ZsZOow" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_epldoE9lEeSdAONB3MOW8w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIZgcU9lEeSdAONB3MOW8w" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -653,7 +653,7 @@
     <bindings xmi:id="_eq8vc09lEeSdAONB3MOW8w" keySequence="ALT+COMMAND+Q Q" command="_epkPhU9lEeSdAONB3MOW8w">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_erStsE9lEeSdAONB3MOW8w" keySequence="COMMAND+CTRL+F" command="_erSGo09lEeSdAONB3MOW8w"/>
+    <bindings xmi:id="_GDQEIU9pEeSvsrH7ZsZOow" keySequence="COMMAND+CTRL+F" command="_erSGo09lEeSdAONB3MOW8w"/>
   </bindingTables>
   <bindingTables xmi:id="_eqmKJE9lEeSdAONB3MOW8w" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_epwcqE9lEeSdAONB3MOW8w">
     <bindings xmi:id="_eqmxME9lEeSdAONB3MOW8w" keySequence="COMMAND+SHIFT+C" command="_ephzLE9lEeSdAONB3MOW8w"/>
@@ -767,7 +767,7 @@
     <bindings xmi:id="_eq4eBU9lEeSdAONB3MOW8w" keySequence="COMMAND+G" command="_epmEpU9lEeSdAONB3MOW8w"/>
   </bindingTables>
   <bindingTables xmi:id="_erSttU9lEeSdAONB3MOW8w" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_eo12oE9lEeSdAONB3MOW8w">
-    <bindings xmi:id="_erSttk9lEeSdAONB3MOW8w" keySequence="M1+W" command="_erSts09lEeSdAONB3MOW8w"/>
+    <bindings xmi:id="_GDQrME9pEeSvsrH7ZsZOow" keySequence="M1+W" command="_erSts09lEeSdAONB3MOW8w"/>
   </bindingTables>
   <bindingTables xmi:id="_fOjy0U9lEeSdAONB3MOW8w" bindingContext="_fOjy0E9lEeSdAONB3MOW8w"/>
   <bindingTables xmi:id="_fOjy009lEeSdAONB3MOW8w" bindingContext="_fOjy0k9lEeSdAONB3MOW8w"/>
