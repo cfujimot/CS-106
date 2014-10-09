@@ -1,6 +1,4 @@
-/**
- * Imports Scanner functionality.
- */
+// Imports Scanner functionality.
 import java.util.*;
 
 /**
@@ -8,7 +6,8 @@ import java.util.*;
  * 
  * @see Quiz: Daily MTG, borrowed phrasing and style of some questions <http://www.wizards.com/magic/quiz/quiz.aspx?x=mtg/quiz/guild>
  */
-public class GW2RaceQuiz {
+public class GW2RaceQuizHackProof {
+
 	/**
 	 * This method initializes the program with a title and passes control flow to question one to begin method chaining.
 	 * 
@@ -30,7 +29,7 @@ public class GW2RaceQuiz {
 		//define scanner for following question
 		Scanner console = new Scanner(System.in);
 
-		System.out.println("Please enter the letter of your answer for each of the following questions.");
+		System.out.println("Please enter the letter of your answer for each of the following questions, then press the return key to continue.");
 		
 		//commence tracking with question one
 		questionOne(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
@@ -54,24 +53,32 @@ public class GW2RaceQuiz {
 		//ask the first question and prompt for the first answer
 		System.out.println();
 		System.out.println("1. If you could create your ideal society, what would it be?");
-		System.out.println(" A: An isolated niche in nature where all beings are mentally connected and working toward a common purpose.");
+		System.out.println(" A: An cabin in nature, away from the bustle of the city, where members must survive by their own hands.");
 		System.out.println(" B: A grand city-state where alliances are won through skirmishes and honor is highly valued.");
 		System.out.println(" C: A place of learning where one’s ascendence through society’s ranks is determined by the cleverness of their inventions.");
-		System.out.println(" D: A serene village where hard work is valued and neighbors are always willing to lend a helping hand.");
+		System.out.println(" D: A village where creativity and hard work are valued, and neighbors are always willing to lend a helping hand.");
 		
+		//scan for next answer
 		String answer1 = console.nextLine();
+		
+		//checks that the answer is either A, B, C, or D
+		while(!(answer1.equalsIgnoreCase("A") || answer1.equalsIgnoreCase("B") || answer1.equalsIgnoreCase("C") || answer1.equalsIgnoreCase("D"))) {
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer1 = console.nextLine();
+		}
 		
 		//recalculate value of each variable based on the first answer
 		if (answer1.equalsIgnoreCase("A")) {
-			empathy += 2;
+			pragmatism ++;
+			empathy --;
 		} else if (answer1.equalsIgnoreCase("B")) {
-			heroism ++;
-			warring ++;
+			warring +=2;
+			heroism +=2;
 		} else if (answer1.equalsIgnoreCase("C")) {
 			ingenuity += 2;
 			curiosity ++;
 		} else {
-			pragmatism ++;
 			empathy ++;
 		}
 		
@@ -102,8 +109,16 @@ public class GW2RaceQuiz {
 		System.out.println(" C: All you need to know is the good of the many versus the good of the few; the rest is superfluous.");
 		System.out.println(" D: Sure, the philosophy of war is great!");
 
+		//scan for next answer
 		String answer2 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer2.equalsIgnoreCase("A") || answer2.equalsIgnoreCase("B") || answer2.equalsIgnoreCase("C") || answer2.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer2 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the second answer
 		if (answer2.equalsIgnoreCase("A")) {
 			curiosity ++;
@@ -141,21 +156,30 @@ public class GW2RaceQuiz {
 		System.out.println("3. How do you tend to work through problems that you encounter on a daily basis?");
 		System.out.println(" A: Running into them headlong a few times seems to work well enough!");
 		System.out.println(" B: I lay out a step-by-step plan and follow it to the letter.");
-		System.out.println(" C: Daily problems don’t interest me unless they require some show of skill and honor.");
+		System.out.println(" C: If my friends and I work together, we can solve pretty much anything.");
 		System.out.println(" D: I devise a machine to do it for me.");
 
+		//scan for next answer
 		String answer3 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer3.equalsIgnoreCase("A") || answer3.equalsIgnoreCase("B") || answer3.equalsIgnoreCase("C") || answer3.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer3 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the third answer
 		if (answer3.equalsIgnoreCase("A")) {
-			warring ++;
+			warring +=2;
 			pragmatism --;
 		} else if (answer3.equalsIgnoreCase("B")) {
 			pragmatism ++;
 		} else if (answer3.equalsIgnoreCase("C")) {
-			heroism +=2;
+			empathy ++;
+			pragmatism ++;
 		} else {
-			ingenuity ++;
+			ingenuity +=2;
 		}
 		
 		//passes control flow to question 4
@@ -180,22 +204,34 @@ public class GW2RaceQuiz {
 		//ask the fourth question and prompt for the fourth answer
 		System.out.println();
 		System.out.println("4. What would you do to inspire a crowd?");
-		System.out.println(" A: I'd speak to the sentiment of the people and their individual beliefs");
+		System.out.println(" A: Take stock of my audience, then speak to their individual beliefs.");
 		System.out.println(" B: Devise an intelligent creation or wild spectacle to accompany my presentation.");
 		System.out.println(" C: Rally them against a common enemy, which they believe to be the scourge of our existence.");
-		System.out.println(" D: I’d inspire them believe in my honor and righteousness, and therefore the rightousness of my cause.");
+		System.out.println(" D: I’d inspire them to believe in my honor and righteousness, and therefore the rightousness of my cause.");
 
+		//scan for next answer
 		String answer4 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer4.equalsIgnoreCase("A") || answer4.equalsIgnoreCase("B") || answer4.equalsIgnoreCase("C") || answer4.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer4 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the fourth answer
 		if (answer4.equalsIgnoreCase("A")) {
 			empathy ++;
-		} else if (answer4.equalsIgnoreCase("B")) {
 			ingenuity ++;
+			pragmatism ++;
+		} else if (answer4.equalsIgnoreCase("B")) {
+			ingenuity +=2;
 		} else if (answer4.equalsIgnoreCase("C")) {
-			warring ++;
+			warring +=2;
 		} else {
-			heroism ++;
+			heroism +=2;
+			empathy ++;
+			warring ++;
 		}
 		
 		//passes control flow to question 5
@@ -225,19 +261,28 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Resources that would fund the army should instead toward the comfort of the citizens.");
 		System.out.println(" D: The primary goal of the army should be to gather information from new territories without destroying natural resources.");
 
+		//scan for next answer
 		String answer5 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer5.equalsIgnoreCase("A") || answer5.equalsIgnoreCase("B") || answer5.equalsIgnoreCase("C") || answer5.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer5 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the fifth answer
 		if (answer5.equalsIgnoreCase("A")) {
-			heroism ++;
-			pragmatism ++;
+			ingenuity ++;
+			warring ++;
 		} else if (answer5.equalsIgnoreCase("B")) {
-			warring +=2;
+			warring +=3;
 		} else if (answer5.equalsIgnoreCase("C")) {
-			empathy ++;
+			empathy +=2;
 			warring --;
 		} else {
 			curiosity ++;
+			empathy ++;
 		}
 		
 		//passes control flow to question 6
@@ -267,12 +312,20 @@ public class GW2RaceQuiz {
 		System.out.println(" C: I’d accept- as he's charging me, I’d trigger a telekinetic grenade of my own personal design— that should teach him to mess with a graduate of the Mages’ College.");
 		System.out.println(" D: If we could just talk out our dispute, I’m sure we could come to an understanding.");
 
+		//scan for next answer
 		String answer6 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer6.equalsIgnoreCase("A") || answer6.equalsIgnoreCase("B") || answer6.equalsIgnoreCase("C") || answer6.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer6 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the sixth answer
 		if (answer6.equalsIgnoreCase("A")) {
 			empathy ++;
-			heroism ++;
+			heroism +=2;
 			pragmatism ++;
 		} else if (answer6.equalsIgnoreCase("B")) {
 			warring +=3;
@@ -310,8 +363,16 @@ public class GW2RaceQuiz {
 		System.out.println(" C: The army, to protect the city.");
 		System.out.println(" D: The governmental body, to parse out responsibility to those beneath me.");
 
+		//scan for next answer
 		String answer7 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer7.equalsIgnoreCase("A") || answer7.equalsIgnoreCase("B") || answer7.equalsIgnoreCase("C") || answer7.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer7 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the seventh answer
 		if (answer7.equalsIgnoreCase("A")) {
 			curiosity +=2;
@@ -319,9 +380,10 @@ public class GW2RaceQuiz {
 		} else if (answer7.equalsIgnoreCase("B")) {
 			empathy ++;
 		} else if (answer7.equalsIgnoreCase("C")) {
-			warring +=2;
-			heroism +=2;
+			warring ++;
+			heroism ++;
 		} else {
+			ingenuity ++;
 			pragmatism ++;
 		}
 		
@@ -352,15 +414,22 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Death is merely an obstacle; I would devise a path toward immortality.");
 		System.out.println(" D: I would live my life on a whim, cutting down anyone who stood in my way.");
 
+		//scan for next answer
 		String answer8 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer8.equalsIgnoreCase("A") || answer8.equalsIgnoreCase("B") || answer8.equalsIgnoreCase("C") || answer8.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer8 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the eighth answer
 		if (answer8.equalsIgnoreCase("A")) {
-			empathy +=2;
+			empathy ++;
 			heroism ++;
 		} else if (answer8.equalsIgnoreCase("B")) {
 			curiosity +=2;
-			pragmatism --;
 		} else if (answer8.equalsIgnoreCase("C")) {
 			ingenuity +=2;
 		} else {
@@ -389,18 +458,28 @@ public class GW2RaceQuiz {
 		//ask the ninth question and prompt for the ninth answer
 		System.out.println();
 		System.out.println("9. You come across what appears to be someone being harassed by guards in the street— what do you do?");
-		System.out.println(" A: I step in, one hand on my sword hilt and the other on my coin purse— perhaps they can be…convinced.");
+		System.out.println(" A: I step in, one hand on my sword hilt and the other on my coin purse— perhaps they can be . . . convinced.");
 		System.out.println(" B: I interject politely and see if I can help solve the dispute— no one will benefit from fighting.");
 		System.out.println(" C: I try to win the guards over with a passionate articulation of the victim’s story!");
-		System.out.println(" D: If the concern doesn’t affect me, it’s not my problem— keep on walking>");
+		System.out.println(" D: If the concern doesn’t affect me, it’s not my problem— keep on walking.");
 
+		//scan for next answer
 		String answer9 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer9.equalsIgnoreCase("A") || answer9.equalsIgnoreCase("B") || answer9.equalsIgnoreCase("C") || answer9.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer9 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the ninth answer
 		if (answer9.equalsIgnoreCase("A")) {
-			heroism +=2;
+			heroism ++;
 			ingenuity ++;
+			warring ++;
 		} else if (answer9.equalsIgnoreCase("B")) {
+			empathy +=2;
 			pragmatism ++;
 			warring --;
 		} else if (answer9.equalsIgnoreCase("C")) {
@@ -409,6 +488,7 @@ public class GW2RaceQuiz {
 		} else {
 			pragmatism ++;
 			empathy --;
+			heroism --;
 		}
 		
 		//passes control flow to question 10
@@ -436,10 +516,18 @@ public class GW2RaceQuiz {
 		System.out.println(" A: New intelligent lifeforms and land to explore? Take me there immediately!");
 		System.out.println(" B: Forget the life forms; I’d bring back any new technology I could and study the hell out of it.");
 		System.out.println(" C: It clearly poses a threat to our society— we should inform the appropriate authorities and prepare to defend our borders.");
-		System.out.println(" D: I would prepare a grand exploratory quest for the glory of our nation!");
+		System.out.println(" D: I'd seek to gather new resources, and understand the beings that live there.");
 
+		//scan for next answer
 		String answer10 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer10.equalsIgnoreCase("A") || answer10.equalsIgnoreCase("B") || answer10.equalsIgnoreCase("C") || answer10.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer10 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the tenth answer
 		if (answer10.equalsIgnoreCase("A")) {
 			curiosity +=3;
@@ -451,7 +539,8 @@ public class GW2RaceQuiz {
 			pragmatism ++;
 			warring ++;
 		} else {
-			heroism +=2;
+			empathy +=2;
+			curiosity +=2;
 		}
 		
 		//passes control flow to question 11
@@ -476,24 +565,33 @@ public class GW2RaceQuiz {
 		//ask the eleventh question and prompt for the eleventh answer
 		System.out.println();
 		System.out.println("11. If you lived in a fantasy world, which side quests would you do?");
-		System.out.println(" A: Anything that involves helping others, but not at the cost of killing innocent beings.");
+		System.out.println(" A: Those that involve helping others, but not at the cost of killing innocent beings.");
 		System.out.println(" B: Endless action? Saving a damsel in distress? Count me in!");
-		System.out.println(" C: Only those that would further my knowledge of the world.");
+		System.out.println(" C: Only those that would further my knowledge of the world and help my clever designs.");
 		System.out.println(" D: Anything that helps me level up, improves my gear, and gives me an advantage over the next guy.");
-
+		
+		//scan for next answer
 		String answer11 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer11.equalsIgnoreCase("A") || answer11.equalsIgnoreCase("B") || answer11.equalsIgnoreCase("C") || answer11.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer11 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the eleventh answer
 		if (answer11.equalsIgnoreCase("A")) {
 			empathy +=2;
+			warring --;
 		} else if (answer11.equalsIgnoreCase("B")) {
 			heroism +=2;
 			warring ++;
 		} else if (answer11.equalsIgnoreCase("C")) {
-			curiosity +=2;
+			curiosity ++;
+			ingenuity ++;
 		} else {
 			pragmatism ++;
-			empathy --;
 		}
 		
 		//passes control flow to question 12
@@ -523,18 +621,27 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Write an algorithm to find the holes in his or her argument, and then exploit them.");
 		System.out.println(" D: I’m not one for heated debates; the point of a discussion is to learn about viewpoints other than my own.");
 
+		//scan for next answer
 		String answer12 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer12.equalsIgnoreCase("A") || answer12.equalsIgnoreCase("B") || answer12.equalsIgnoreCase("C") || answer12.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer12 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the twelfth answer
 		if (answer12.equalsIgnoreCase("A")) {
 			pragmatism ++;
 		} else if (answer12.equalsIgnoreCase("B")) {
 			warring +=2;
 		} else if (answer12.equalsIgnoreCase("C")) {
-			ingenuity ++;
+			ingenuity +=2;
 			empathy --;
 		} else {
 			curiosity ++;
+			empathy ++;
 			warring --;
 		}
 		
@@ -565,27 +672,35 @@ public class GW2RaceQuiz {
 		System.out.println(" C: Seek out their attacker and take vengeance on my own terms.");
 		System.out.println(" D: Devise a way to hack into the city’s power source and turn all its resources to finding the one responsible.");
 		
+		//scan for next answer
 		String answer13 = console.nextLine();
 
+		//checks that the answer is either A, B, C, or D
+		while(!(answer13.equalsIgnoreCase("A") || answer13.equalsIgnoreCase("B") || answer13.equalsIgnoreCase("C") || answer13.equalsIgnoreCase("D"))){
+			System.out.println("You entered a character or string of characters other than A, B, C, or D.");
+			System.out.println("Please enter A, B, C, or D and then press the return key. Your answer is not case-sensitive.");
+			answer13 = console.nextLine();
+		}
+				
 		//recalculate value of each variable based on the thirteen answer
 		if (answer13.equalsIgnoreCase("A")) {
-			empathy ++;
+			empathy +=2;
 		} else if (answer13.equalsIgnoreCase("B")) {
 			pragmatism +=2;
 			heroism ++;
 		} else if (answer13.equalsIgnoreCase("C")) {
 			heroism ++;
-			warring ++;
+			warring +=2;
 		} else {
 			heroism ++;
 			ingenuity ++;
 		}
 		
 		//passes control flow to the results method
-		printRace(curiosity, empathy, heroism, ingenuity, pragmatism, warring);
+		printRace(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);
 	}
 	
-	public static void printRace(int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
+	public static void printRace(Scanner console, int curiosity, int empathy, int heroism, int ingenuity, int pragmatism, int warring) {
 		 
 		//prints the cumulative trait scores
 		System.out.println();
@@ -599,26 +714,54 @@ public class GW2RaceQuiz {
 		System.out.println();
 		
 		//calculates race based on the six trait variables
-		if (ingenuity > curiosity && ingenuity > empathy && ingenuity > heroism && ingenuity > pragmatism && ingenuity > warring
-				&& pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism > warring) {
+		if (ingenuity > empathy && ingenuity > heroism && ingenuity >= pragmatism && ingenuity > warring
+				&& curiosity > empathy && curiosity > heroism && curiosity >= pragmatism && curiosity > warring) {
 			System.out.println("You are an Asura!");
-		} else if (pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism > ingenuity && pragmatism > warring
-				&& warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity) {
+			System.out.println("Asura are defined by their ingenuity, curiosity, and pragmatism.");
+		} else if (pragmatism > curiosity && pragmatism > empathy && pragmatism > heroism && pragmatism >= ingenuity
+				&& warring > curiosity && warring > empathy && warring > heroism && warring >= ingenuity) {
 			System.out.println("You are a Char!");
-		} else if (heroism > curiosity && heroism > empathy && heroism > ingenuity && heroism > pragmatism && heroism > warring
-				&& ingenuity > curiosity && ingenuity > empathy && ingenuity > pragmatism && ingenuity > warring) {
+			System.out.println("Char are defined by their pragmatism, warring nature, and ingenuity.");
+		} else if (heroism > curiosity && heroism >= ingenuity && heroism > pragmatism && heroism >= warring
+				&& empathy > curiosity && empathy >= ingenuity && empathy > pragmatism && empathy > warring) {
 			System.out.println("You are a Human!");
-		} else if (warring > curiosity && warring > empathy && warring > heroism && warring > ingenuity && warring > pragmatism
-				&& curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism) {
+			System.out.println("Humans are defined by their heroism, empathy, and ingenuity.");
+		} else if (warring >= curiosity && warring > empathy && warring > ingenuity && warring > pragmatism
+				&& heroism >= curiosity && heroism > empathy && heroism > ingenuity && heroism > pragmatism) {
 			System.out.println("You are a Norn!");
-		} else if (curiosity > empathy && curiosity > heroism && curiosity > ingenuity && curiosity > pragmatism && curiosity > warring
-				&& empathy > heroism && empathy > ingenuity && empathy > pragmatism && empathy > warring) {
+			System.out.println("Norn are defined by their warring nature, heroism, and curiosity.");
+		} else if (curiosity > heroism && curiosity >= ingenuity && curiosity > pragmatism && curiosity > warring
+				&& empathy >= heroism && empathy >= ingenuity && empathy > pragmatism && empathy > warring) {
 			System.out.println("You are a Sylvari!");
+			System.out.println("Sylvari are defined by their curiosity, empathy, and ingenuity.");
 		} else {
 			System.out.println("Your results are inconclusive.");
-		}
-		
-	}
+			System.out.println();
+			System.out.println("Asura are defined by their ingenuity, curiosity, and pragmatism.");
+			System.out.println("Char are defined by their pragmatism, warring nature, and ingenuity.");
+			System.out.println("Humans are defined by their heroism, empathy, and ingenuity.");
+			System.out.println("Norn are defined by their warring nature, heroism, and curiosity.");
+			System.out.println("Sylvari are defined by their curiosity, empathy, and ingenuity.");
+			System.out.println();
+			System.out.println("Would you like to take the quiz again? Please enter Y for yes or N for no.");
+			
+			String answerFinal = console.nextLine();
 
+			while(!(answerFinal.equalsIgnoreCase("Y") || answerFinal.equalsIgnoreCase("N"))){
+				System.out.println("You entered a character or string of characters other than Y or N. Your answer is not case-sensitive.");
+				System.out.println("Please enter Y or N and then press the return key. Your answer is not case-sensitive.");
+				answerFinal = console.nextLine();
+			}
+			
+			if (answerFinal.equalsIgnoreCase("Y")) {
+				questionOne(console, curiosity, empathy, heroism, ingenuity, pragmatism, warring);	
+			} else {
+				System.out.println("Thank you for participating!");
+			}
+		//closes the first if-else statement
+		}
+	//closes the final method
+	}
+	
 //closes the class
 }
