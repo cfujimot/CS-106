@@ -13,7 +13,6 @@ public class FileManipulator {
 	/**
 	 * 
 	 * @param args
-	 * @throws FileNotFoundException
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
 		//scanner to read through the file
@@ -28,34 +27,35 @@ public class FileManipulator {
 				
 		//loops through the file and passes to different methods based on line contents
 		while (fileReader.hasNextLine()) {
-			
 			//bypasses first column of dates
 			fileReader.next();
 			
 			//reads in account type and chooses appropriate method
 			accountType = fileReader.next();
 			if (accountType.equals("Checking")) {
+				//processChecking(fileReader.nextLine(), transactionType, checking);
+				//updates checking variable
 				checking = processChecking(fileReader.nextLine(), transactionType, checking);
 			} else if (accountType.equals("Savings")) {
+				//processSavings(fileReader.nextLine(), transactionType, savings);
+				//updates savings variable
 				savings = processSavings(fileReader.nextLine(), transactionType, savings);
 			} else if (accountType.equals("Credit")) {
+				//processCredit(fileReader.nextLine(), transactionType, credit);
+				//updates credit variable
 				credit = processCredit(fileReader.nextLine(), transactionType, credit);
 			}	
+			//is this necessary? fileReader.nextLine();
 		}
 		
-		//close the file reader once the entire file is processed
 		fileReader.close();
 		
-		//printstream object to output results to new text file
-		PrintStream output = new PrintStream (new File("src/output.txt"));
-		
-		//prints the results
-		output.println("Checking Account Balance = $" + checking + ".");
-		output.println("Savings Account Balance = $" + savings + ".");
-		output.println("Credit Card Balance = $" + credit + ".");
-		
-		//closes the printstream object once results are printed
-		output.close();
+		//prints results
+		System.out.println("Checking Account Balance = " + checking + ".");
+		System.out.println("Savings Account Balance = " + savings + ".");
+		System.out.println("Credit Card Balance = " + credit + ".");
+			/*PrintStream output = new PrintStream (new File("src/output.txt"));
+			output.close(); */
 	}
 		
 	/**
@@ -79,7 +79,7 @@ public class FileManipulator {
 		//System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
-			checkingProcessor.next(); //this skips over the second word of Opening Balance
+			checkingProcessor.next();
 			checking += checkingProcessor.nextDouble();
 		} else if (transactionType.equals("Withdrawal")) {
 			checking -= checkingProcessor.nextDouble();
@@ -87,24 +87,23 @@ public class FileManipulator {
 			checking += checkingProcessor.nextDouble();
 		}
 		
-		//closes the checking processor line reader once checking variable has been updated
 		checkingProcessor.close();
-		
-		//returns updated value of checking to main
+				
 		return checking;
 	}
 			
 	/**
 	 * 
-	 * @param line The remainder of the current line, with date and account type appended
-	 * @param transactionType Opening balance, withdrawal, or deposit
-	 * @param checking Savings account variable
-	 * @return Returns updated savings value
+	 * @param line
+	 * @param transactionType
+	 * @param savings
+	 * @return
 	 */
 	public static double processSavings(String line, String transactionType, double savings) {
 		//scanner to read through the line passed in from fileReader
 		Scanner savingsProcessor = new Scanner(line);
-
+		
+		System.out.println(savingsProcessor.nextLine());
 		//CHECK: how many times does it loop through the savings method?
 		//System.out.println("savings");
 				
@@ -112,10 +111,10 @@ public class FileManipulator {
 		transactionType = savingsProcessor.next();
 
 		//CHECK: what is this reader actually seeing?
-		//System.out.println(transactionType);
+		System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
-			savingsProcessor.next(); //this skips over the second word of Opening Balance
+			savingsProcessor.next();
 			savings += savingsProcessor.nextDouble();
 		} else if (transactionType.equals("Withdrawal")) {
 			savings -= savingsProcessor.nextDouble();
@@ -123,24 +122,22 @@ public class FileManipulator {
 			savings += savingsProcessor.nextDouble();
 		}
 		
-		//closes the savings processor line reader once savings variable has been updated
 		savingsProcessor.close();
 
-		//returns updated value of savings to main
 		return savings;
 	}
 	
 	/**
 	 * 
-	  * @param line The remainder of the current line, with date and account type appended
-	 * @param transactionType Opening balance, withdrawal, or deposit
-	 * @param checking Credit Card account variable
-	 * @return Returns updated credit value
+	 * @param line
+	 * @param transactionType
+	 * @param credit
+	 * @return
 	 */
 	public static double processCredit(String line, String transactionType, double credit) {
 		//scanner to read through the line passed in from fileReader
 		Scanner creditProcessor = new Scanner(line);
-		creditProcessor.next(); //skips the second word of Credit Card
+		creditProcessor.next();
 		
 		//CHECK: how many times does it loop through the credit method?
 		//System.out.println("credit");
@@ -152,7 +149,7 @@ public class FileManipulator {
 		//System.out.println(transactionType);
 		
 		if (transactionType.equals("Opening")) {
-			creditProcessor.next(); //this skips over the second word of Opening Balance
+			creditProcessor.next();
 			credit += creditProcessor.nextDouble();
 		} else if (transactionType.equals("Withdrawal")) {
 			credit -= creditProcessor.nextDouble();
@@ -160,10 +157,8 @@ public class FileManipulator {
 			credit += creditProcessor.nextDouble();
 		}
 	
-		//closes the credit processor line reader once credit variable has been updated
 		creditProcessor.close();
 
-		//returns updated value of credit to main
 		return credit;
 	}
 	

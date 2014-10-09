@@ -50,9 +50,9 @@ public class FileManipulator {
 		PrintStream output = new PrintStream (new File("src/output.txt"));
 		
 		//prints the results
-		output.println("Checking Account Balance = $" + checking + ".");
-		output.println("Savings Account Balance = $" + savings + ".");
-		output.println("Credit Card Balance = $" + credit + ".");
+		output.println("Checking Account Balance = " + checking + ".");
+		output.println("Savings Account Balance = " + savings + ".");
+		output.println("Credit Card Balance = " + credit + ".");
 		
 		//closes the printstream object once results are printed
 		output.close();
