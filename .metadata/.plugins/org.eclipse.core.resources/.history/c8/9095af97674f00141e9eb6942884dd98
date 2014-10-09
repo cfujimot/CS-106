@@ -46,7 +46,8 @@ public class FileManipulator {
 				//updates credit variable
 				credit = processCredit(fileReader.nextLine(), transactionType, credit);
 			}			
-				
+				//advances the file reader to the next line
+				fileReader.nextLine();	
 		}
 		
 		fileReader.close();
@@ -85,25 +86,29 @@ public class FileManipulator {
 		checkingProcessor.close();
 				
 		return checking;
+		
 	}
 			
 	/**
 	 * 
 	 * @param line
-	 * @param transactionType
+	 * @param checking
 	 * @param savings
+	 * @param creditCard
 	 * @return
 	 */
 	public static double processSavings(String line, String transactionType, double savings) {
-		//scanner to read through the line passed in from fileReader
 		Scanner savingsProcessor = new Scanner(line);
 						
-		//reads the type of transaction and chooses appropriate calculation
 		transactionType = savingsProcessor.next();
 
+		System.out.println(transactionType);
+
+		//skip to the transaction value
+		savingsProcessor.next();
+				
 		if (transactionType.equals("Opening")) {
-			savingsProcessor.next();
-			savings += savingsProcessor.nextDouble();
+			savings += savingsProcessor.nextDouble();	
 		} else if (transactionType.equals("Withdrawal")) {
 			savings -= savingsProcessor.nextDouble();
 		} else if (transactionType.equals("Deposit")) {
@@ -113,25 +118,36 @@ public class FileManipulator {
 		savingsProcessor.close();
 
 		return savings;
+		
 	}
 	
 	/**
 	 * 
 	 * @param line
-	 * @param transactionType
-	 * @param credit
+	 * @param checking
+	 * @param savings
+	 * @param creditCard
 	 * @return
 	 */
 	public static double processCredit(String line, String transactionType, double credit) {
-		//scanner to read through the line passed in from fileReader
 		Scanner creditProcessor = new Scanner(line);
+		
+		//skip the first column of dates, and the second of account type
+		creditProcessor.next();
+		creditProcessor.next();
+		creditProcessor.next();
 				
-		//reads the type of transaction and chooses appropriate calculation
 		transactionType = creditProcessor.next();
 		
+		//System.out.println(transactionType);
+		
+		//skip to the transaction type
+		//creditProcessor.next();
+				
 		if (transactionType.equals("Opening")) {
-			creditProcessor.next();
+			//creditProcessor.next();
 			credit += creditProcessor.nextDouble();
+			//System.out.println(creditCard);
 		} else if (transactionType.equals("Withdrawal")) {
 			credit -= creditProcessor.nextDouble();
 		} else if (transactionType.equals("Deposit")) {
@@ -141,6 +157,7 @@ public class FileManipulator {
 		creditProcessor.close();
 
 		return credit;
+	
 	}
 	
 }

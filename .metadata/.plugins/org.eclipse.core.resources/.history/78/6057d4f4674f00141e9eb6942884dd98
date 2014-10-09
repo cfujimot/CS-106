@@ -103,7 +103,7 @@ public class FileManipulator {
 
 		if (transactionType.equals("Opening")) {
 			savingsProcessor.next();
-			savings += savingsProcessor.nextDouble();
+			savings += savingsProcessor.nextDouble();	
 		} else if (transactionType.equals("Withdrawal")) {
 			savings -= savingsProcessor.nextDouble();
 		} else if (transactionType.equals("Deposit")) {

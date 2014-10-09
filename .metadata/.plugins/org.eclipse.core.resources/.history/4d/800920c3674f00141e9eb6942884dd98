@@ -46,7 +46,8 @@ public class FileManipulator {
 				//updates credit variable
 				credit = processCredit(fileReader.nextLine(), transactionType, credit);
 			}			
-				
+				//advances the file reader to the next line
+				fileReader.nextLine();	
 		}
 		
 		fileReader.close();
@@ -102,8 +103,7 @@ public class FileManipulator {
 		transactionType = savingsProcessor.next();
 
 		if (transactionType.equals("Opening")) {
-			savingsProcessor.next();
-			savings += savingsProcessor.nextDouble();
+			savings += savingsProcessor.nextDouble();	
 		} else if (transactionType.equals("Withdrawal")) {
 			savings -= savingsProcessor.nextDouble();
 		} else if (transactionType.equals("Deposit")) {
@@ -130,8 +130,9 @@ public class FileManipulator {
 		transactionType = creditProcessor.next();
 		
 		if (transactionType.equals("Opening")) {
-			creditProcessor.next();
+			//creditProcessor.next();
 			credit += creditProcessor.nextDouble();
+			//System.out.println(creditCard);
 		} else if (transactionType.equals("Withdrawal")) {
 			credit -= creditProcessor.nextDouble();
 		} else if (transactionType.equals("Deposit")) {
