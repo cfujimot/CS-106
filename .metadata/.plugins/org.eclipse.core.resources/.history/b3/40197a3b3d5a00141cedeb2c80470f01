@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+import java.util.*;
+import java.io.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class MtgLineCounter {
+	
+	//TODO declare class-level variables
+	
+	public MtgLineCounter(){
+		
+		
+	}
+	
+	//method to count number of lines in the input file
+	public int lineCounter() throws FileNotFoundException{
+		Scanner lineCounter = new Scanner (new File("src/mtg decklist.txt"));
+		int numberOfLines=0;
+		
+		while (lineCounter.hasNextLine()) {
+			numberOfLines ++;
+			lineCounter.nextLine();
+		}
+		lineCounter.close();
+		
+		return numberOfLines;
+	}
+	
+	
+}

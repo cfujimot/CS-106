@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+import java.io.*;
+import java.util.*;
+/**
+ * @author maddierook
+ *
+ */
+public class CardParser {
+
+	
+	public void cardParser () throws FileNotFoundException {
+	LineCounter lines = new LineCounter();
+	
+	CardInfo [] cardData = new CardInfo [lines.lineCounter()];
+	
+}

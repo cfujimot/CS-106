@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+import java.util.*;
+import java.io.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class CardInfo {
+	
+	//TODO declare class-level variables
+
+	public String cardType; 
+	public String color; 
+	public int convertedManaCost;
+	public String power; 
+	public String toughness; 
+	public String set; 
+	public int copyNumber;
+	
+	public CardInfo(String cardType1, String color1, int convertedManaCost1, String power1, String toughness1, String set1, int copyNumber1) {
+		
+		
+	}
+		
+	
+	
+}

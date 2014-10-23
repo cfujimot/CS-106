@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+import java.util.*;
+import java.io.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class MtgDecklistReader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		CardInfo [] cardData = new CardInfo [numberOfLines];
+		
+		int index = 0;
+		while 
+		
+		//TODO read in each line as a card classification
+		//TODO count creature, artifact, enchantment, sorcery, instant, and land cards
+		//TODO is it standard or modern legal?
+
+	}
+
+}

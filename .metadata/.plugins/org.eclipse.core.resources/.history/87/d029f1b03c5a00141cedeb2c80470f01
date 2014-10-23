@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+import java.util.*;
+import java.io.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class MtgDecklistReader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+
+	}
+
+}
