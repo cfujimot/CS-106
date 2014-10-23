@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+import java.util.*;
+import java.io.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class MtgDecklistReader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+
+		LineCounter lines = new LineCounter();
+		System.out.println(lines.lineCounter());
+
+		CardParser cardsMain = new CardParser();
+		
+		//TODO insert a toString functionality in the CardInfo class
+		System.out.println(cardsMain.deckSize());
+		System.out.println(cardsMain.landRatio());
+		System.out.println(cardsMain.meanConvetedManaCost());
+		System.out.println(cardsMain.deckSize());
+		
+		//TODO count creature, artifact, enchantment, sorcery, instant, and land cards
+		//TODO mean CMC
+		//TODO is it standard or modern legal?
+
+	}
+
+}

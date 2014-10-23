@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+import java.util.*;
+import java.io.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class MtgDecklistReader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+
+		LineCounter lines = new LineCounter();
+		System.out.println(lines.lineCounter());
+
+		Scanner fileReader = new Scanner (new File("src/mtg decklist.txt"));
+		int counter = 0;
+		while (fileReader.hasNextLine()) {
+			String cardName = fileReader.next(); //if I define cardName in this class, is it the same as the one in CardInfo?
+			
+			while (!fileReader.hasNextInt()) {
+				cardName = cardName + " " + fileReader.next();
+			}
+			
+			int convertedManaCost = fileReader.nextInt();
+			
+			String cardType = fileReader.next();
+			if (cardType.equals("creature")) {
+				String power = fileReader.next();
+				String toughness = fileReader.next();
+			}
+			
+			String color = fileReader.next();
+			
+			int copyNumber = fileReader.nextInt();
+			
+			while (fileReader.hasNext()){
+				String set = fileReader.next();
+				
+		//TODO count creature, artifact, enchantment, sorcery, instant, and land cards
+		//TODO mean CMC
+		//TODO is it standard or modern legal?
+
+	}
+
+}

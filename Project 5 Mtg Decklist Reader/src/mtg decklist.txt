@@ -1,15 +1,15 @@
-Shriekgeist					creature	blue	2	1		1			Dark Ascension						3
-Dimir Cutpurse				creature	dimir	3	2		2			Duel Decks: Ajani vs. Nicol Bolas	4
-Dungeon Geists				creature	blue	4	3		3			Commander 2013 Edition				4
-Returned Centaur			creature	black	4	2		4			Theros								3
-Mortivore					creature	black	4	*		*			Magic: The Gathering- Commander		1
-Consuming Aberration		creature	dimir	5	*		*			Gatecrash							2
-Phenax, God of Deception	creature	dimir	5	4		7			Born of the Gods					1
-Aqueous Form				enchantment	blue	1						Theros								4
-Death's Approach			enchantment	black	1						Gatecrash							2
-Paranoid Delusions			sorcery		dimir	2						Gatecrash							4
-Thought Scour				instant		blue	1						Duel Decks: Jace vs. Vraska			3
-Psychic Strike				instant		dimir	3						Gatecrash							4
-Temple of Deceit			land		dimir	0						Theros								4
-Swamp						basic land	black	0															10
-Island						basic land	blue	0															11
+Shriekgeist					2	creature	1	1	blue	3	Dark Ascension
+Dimir Cutpurse				3	creature	2	2	dimir	4	Duel Decks: Ajani vs. Nicol Bolas
+Dungeon Geists				4	creature	3	3	blue	4	Commander 2013 Edition
+Returned Centaur			4	creature	2	4	black	3	Theros
+Mortivore					4	creature	*	*	black	1	Magic: The Gathering- Commander
+Consuming Aberration		5	creature	*	*	dimir	2	Gatecrash
+Phenax, God of Deception	5	creature	4	7	dimir	1	Born of the Gods
+Aqueous Form				1	enchantment			blue	4	Theros
+Death's Approach			1	enchantment			black	2	Gatecrash
+Paranoid Delusions			2	sorcery				dimir	4	Gatecrash
+Thought Scour				1	instant				blue	3	Duel Decks: Jace vs. Vraska
+Psychic Strike				3	instant				dimir	4	Gatecrash
+Temple of Deceit			0	land				dimir	4	Theros
+Swamp						0	land				black	10	
+Island						0	land				blue	11	

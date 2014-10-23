@@ -14,27 +14,26 @@ public class CardInfo {
 	
 	//declare class-level variables, traits of each card
 	public String cardName;
-	public String cardType; 
-	public String color; 
 	public int convertedManaCost;
+	public String cardType; 
 	public String power; 
-	public String toughness; 
-	public String set; 
+	public String toughness;
+	public String color; 
 	public int copyNumber;
+	public String set; 
 	
-	public CardInfo(String cardName1, String cardType1, String color1, int convertedManaCost1, String power1, String toughness1, String set1, int copyNumber1) {
+	public CardInfo(String cardName1, int convertedManaCost1, String cardType1, String power1, String toughness1, String color1,  int copyNumber1, String set1) {
 		
 		//set variables
 		cardName = cardName1;
-		cardType = cardType1; 
-		color = color1;
 		convertedManaCost = convertedManaCost1;
+		cardType = cardType1;
 		power  = power1;
 		toughness = toughness1;
-		set = set1;
+		color = color1;
 		copyNumber = copyNumber1;
-		
-		
+		set = set1;
+
 	}
 
 	/*
