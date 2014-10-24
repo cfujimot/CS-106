@@ -18,13 +18,12 @@ public class MtgDecklistReader {
 		LineCounter lines = new LineCounter();
 		System.out.println(lines.lineCounter());
 
-		//CardConstructor card = new CardConstructor(cardName, convertedManaCost, cardType, power, toughness, color, copyNumber, set);
-		//System.out.println(card.cardName);
+		CardConstructor card = new CardConstructor(cardName, convertedManaCost, cardType, power, toughness, color, copyNumber, set);
+		System.out.println(card.cardName);
 		
-		//CardParser parse = new CardParser();
-		//CardConstructor[] cards = CardParser.cardParser();
-		
-		//TODO card analyzer class to do the methods below, so only have to have one line to perform all calculations
+		CardParser parse = new CardParser();
+		CardConstructor[] cards = CardParser.cardParser();
+		 
 		 
 		//TODO insert a toString functionality in the CardInfo class
 		System.out.println(parse.deckSize()); //output: Deck size is x cards.

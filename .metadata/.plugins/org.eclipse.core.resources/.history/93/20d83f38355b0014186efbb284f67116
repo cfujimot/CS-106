@@ -23,8 +23,7 @@ public class MtgDecklistReader {
 		
 		//CardParser parse = new CardParser();
 		//CardConstructor[] cards = CardParser.cardParser();
-		
-		//TODO card analyzer class to do the methods below, so only have to have one line to perform all calculations
+		 
 		 
 		//TODO insert a toString functionality in the CardInfo class
 		System.out.println(parse.deckSize()); //output: Deck size is x cards.

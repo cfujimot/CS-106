@@ -9,12 +9,8 @@ import java.util.*;
  */
 public class CardParser {
 
-	/**
-	 * 
-	 * @return Returns an array of card constructor objects
-	 * @throws FileNotFoundException
-	 */
-	public CardConstructor[] cardParser () throws FileNotFoundException {
+	
+	public void cardParser () throws FileNotFoundException {
 	
 		//creates an instance of the line counter object
 		LineCounter lines = new LineCounter();

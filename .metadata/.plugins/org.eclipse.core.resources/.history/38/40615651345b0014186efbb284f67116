@@ -9,18 +9,14 @@ import java.util.*;
  */
 public class CardParser {
 
-	/**
-	 * 
-	 * @return Returns an array of card constructor objects
-	 * @throws FileNotFoundException
-	 */
-	public CardConstructor[] cardParser () throws FileNotFoundException {
+	
+	public void cardParser () throws FileNotFoundException {
 	
 		//creates an instance of the line counter object
 		LineCounter lines = new LineCounter();
 	
 		//creates an array based on the method lineCounter in the lines instance of the LineCounter object
-		CardConstructor [] cards = new CardConstructor [lines.lineCounter()];
+		CardInfo [] cards = new CardInfo [lines.lineCounter()];
 		
 		
 		//reads in each line to populate the cards array
@@ -56,7 +52,7 @@ public class CardParser {
 				String set = fileReader.next();
 			}
 		//populates the array after each pass through the while loop
-		cards [index] = new CardConstructor(cardName, convertedManaCost, cardType, power, toughness, color, copyNumber, set);
+		cards [index] = new CardInfo(cardName, convertedManaCost, cardType, power, toughness, color, copyNumber, set);
 		
 		//increments the counter after each line
 		index ++;
