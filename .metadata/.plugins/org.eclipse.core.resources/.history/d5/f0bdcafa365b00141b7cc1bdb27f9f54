@@ -72,8 +72,6 @@ public class CardConstructor {
 	
 	//standard or modern legal?
 	public String formatLegality() {
-		String formatLegality = null;
-		return formatLegality;
 	}		
 	
 }

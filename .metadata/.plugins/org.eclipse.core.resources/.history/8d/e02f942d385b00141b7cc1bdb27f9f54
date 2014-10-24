@@ -22,6 +22,7 @@ public class CardParser {
 		//creates an array based on the method lineCounter in the lines instance of the LineCounter object
 		CardConstructor [] cards = new CardConstructor [lines.lineCounter()];
 		
+		
 		//reads in each line to populate the cards array
 		Scanner fileReader = new Scanner (new File("src/mtg decklist.txt"));
 		int index = 0;
@@ -55,12 +56,12 @@ public class CardParser {
 			color = fileReader.next();
 			
 			//read in how many copies of the card are being played
-			copyNumber = fileReader.nextInt();
+			int copyNumber = fileReader.nextInt();
 			
 			//as long as there are tokens, read in the set until the end of the line
 			//TODO how do I know it won't just skip to the next line and keep reading in tokens incorrectly?
 			while (fileReader.hasNext()){
-				set = fileReader.next();
+				String set = fileReader.next();
 			}
 		//populates the array after each pass through the while loop
 		cards [index] = new CardConstructor(cardName, convertedManaCost, cardType, power, toughness, color, copyNumber, set);
@@ -71,9 +72,6 @@ public class CardParser {
 		
 		//closes the file reader once the array is populated
 		fileReader.close();
-		
-		//return cards as an array of CardConstructor objects
-		return cards;
 		
 	}
 }

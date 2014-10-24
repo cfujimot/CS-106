@@ -60,20 +60,14 @@ public class CardConstructor {
 		return landRatio;
 	}
 		
-	public int spellRatio() {
-		int spellRatio = 0;
-		return spellRatio;
+	public int spellRatio(){
 	}
 	
-	public int meanCMC() {
-		int meanCMC = 0;
-		return meanCMC;
+	public int meanConvertedManaCost(){
 	}
 	
 	//standard or modern legal?
 	public String formatLegality() {
-		String formatLegality = null;
-		return formatLegality;
 	}		
 	
 }

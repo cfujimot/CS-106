@@ -65,15 +65,13 @@ public class CardConstructor {
 		return spellRatio;
 	}
 	
-	public int meanCMC() {
+	public int meanConvertedManaCost() {
 		int meanCMC = 0;
 		return meanCMC;
 	}
 	
 	//standard or modern legal?
 	public String formatLegality() {
-		String formatLegality = null;
-		return formatLegality;
 	}		
 	
 }

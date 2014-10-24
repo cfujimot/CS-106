@@ -50,30 +50,17 @@ public class CardConstructor {
 
 	//calculate the deck size
 	public int deckSize() {
-		int deckSize = 0;
-		return deckSize;
 	}
 		
 	//calculate the land ratio
 	public int landRatio() {
-		int landRatio = 0;
-		return landRatio;
 	}
 		
-	public int spellRatio() {
-		int spellRatio = 0;
-		return spellRatio;
-	}
-	
-	public int meanCMC() {
-		int meanCMC = 0;
-		return meanCMC;
+	public int spellRatio(){
 	}
 	
 	//standard or modern legal?
 	public String formatLegality() {
-		String formatLegality = null;
-		return formatLegality;
 	}		
 	
 }
