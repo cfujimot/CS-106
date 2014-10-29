@@ -130,7 +130,7 @@ public class Deck {
 		for (Card c : cards) {
 			if (!c.cardType.equalsIgnoreCase("land")) {
 				nonLand += c.copyNumber;
-				totalCMC = totalCMC + c.copyNumber*c.convertedManaCost;
+				totalCMC = c.copyNumber*c.convertedManaCost;
 				meanCMC = totalCMC/nonLand;
 			}
 		}

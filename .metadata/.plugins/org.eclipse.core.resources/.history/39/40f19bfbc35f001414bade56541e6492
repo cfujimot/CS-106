@@ -126,12 +126,10 @@ public class Deck {
 	public double meanCMC() {
 		double nonLand = 0;
 		double meanCMC = 0;
-		double totalCMC = 0;
 		for (Card c : cards) {
 			if (!c.cardType.equalsIgnoreCase("land")) {
 				nonLand += c.copyNumber;
-				totalCMC = totalCMC + c.copyNumber*c.convertedManaCost;
-				meanCMC = totalCMC/nonLand;
+				meanCMC = c.copyNumber*c.convertedManaCost/nonLand;
 			}
 		}
 		return meanCMC;
