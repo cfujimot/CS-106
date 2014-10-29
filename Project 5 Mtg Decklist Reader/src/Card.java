@@ -1,10 +1,4 @@
 /**
- * 
- */
-import java.util.*;
-import java.io.*;
-
-/**
  * @author maddierook
  *
  * Class to represent one object (card) in the deck
