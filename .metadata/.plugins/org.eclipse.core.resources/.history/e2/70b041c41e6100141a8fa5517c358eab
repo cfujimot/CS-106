@@ -1,25 +1,14 @@
-import java.io.*; //imports file not found
-import java.util.*; //imports scanner
-
+/**
+ * 
+ */
+import java.io.*;
+import java.util.*;
 /**
  * @author maddierook
- *
- * A class to process card objects as a deck and calculate stats based on intrinsic properties of each card.
- *
- * @cards
- * @cardName
- * @convertedManaCost
- * @cardType
- * @power
- * @toughness
- * @color
- * @copyNumber
- * @set
  *
  */
 public class Deck {
 
-	//declare class-level variables, including the array of card object
 	public Card[] cards;
 	public String cardName;
 	public int convertedManaCost;
@@ -31,8 +20,9 @@ public class Deck {
 	public String set; 
 		
 	/**
-	 * A method to array the card objects into a deck object.
+	 * Class to array the card objects into a deck
 	 * 
+	 * @return Returns an array of card constructor objects
 	 * @throws FileNotFoundException
 	 */
 	public void load () throws FileNotFoundException { 
@@ -88,21 +78,7 @@ public class Deck {
 	}
 	
 	
-	/**
-	 * A method to tally certain card stats and output them to the screen.
-	 * 
-	 * @deckSize
-	 * @land
-	 * @spell
-	 * @landRatio
-	 * @creature
-	 * @nonCreature
-	 * @spellRatio
-	 * @nonLand
-	 * @totalCMC
-	 * @meanCMC
-	 * @standardLegality
-	 */
+	
 	public void analyze() {
 		
 		//calculates deck size
@@ -140,8 +116,8 @@ public class Deck {
 
 		//calculates mean converted mana cost
 		double nonLand = 0;
-		double totalCMC = 0;
 		double meanCMC = 0;
+		double totalCMC = 0;
 		for (Card c : cards) {
 			if (!c.cardType.equalsIgnoreCase("land")) {
 				nonLand += c.copyNumber;
@@ -162,18 +138,5 @@ public class Deck {
 		}
 		System.out.println("Your deck is " + standardLegality + " legal."); 
 		
-		//outputs game information
-		System.out.println();
-		System.out.println();
-		System.out.println("The minimum deck size for constructed is 60 cards.");
-		System.out.println();
-		System.out.println("Standard currently includes all cards in the sets: Return to Ravnica, Gatecrash, Dragon's Maze, Magic 2014, Theros, Born of the Gods, Journey Into Nyx, and Magic 2015.");
-		System.out.println();
-		System.out.println("Modern currently includes all cards in the 'new' card frame (since 8th Edition), with a banned list.");
-		System.out.println();
-		System.out.println("The following cards are banned from Modern tournaments: Ancestral Vision, Ancient Den, Blazing Shoal, Bloodbraid Elf, ");
-		System.out.println("	Chrome Mox, Cloudpost, Dark Depths, Deathrite Shaman, Dread Return, Glimpse of Nature, Golgari Grave-Troll, Great Furnace, Green Sun's Zenith, ");
-		System.out.println("	Hypergenesis, Jace the Mind Sculptor, Mental Misstep, Ponder, Preordain, Punishing Fire, Rite of Flame, Seat of the Synod, Second Sunrise, ");
-		System.out.println("	Seething Song, Sensei's Divining Top, Stoneforge Mystic, Skullclamp, Sword of the Meek, Tree of Tales, Umezawa's Jitte, and Vault of Whispers.");
 	}
 }

@@ -6,7 +6,6 @@ import java.util.*; //imports scanner
  * @author maddierook
  * 
  * The first class to process the file, called by the Deck class to populate an array of the appropriate size.
- * 
  */
 public class LineCounter {
 

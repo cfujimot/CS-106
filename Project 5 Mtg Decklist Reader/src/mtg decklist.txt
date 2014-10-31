@@ -1,3 +1,4 @@
+Card Name					CMC	Card Type	Pow	Tou	Color	Num	Set
 Shriekgeist					2	creature	1	1	blue	3	Dark Ascension
 Dimir Cutpurse				3	creature	2	2	dimir	4	Duel Decks: Ajani vs. Nicol Bolas
 Dungeon Geists				4	creature	3	3	blue	4	Commander 2013 Edition

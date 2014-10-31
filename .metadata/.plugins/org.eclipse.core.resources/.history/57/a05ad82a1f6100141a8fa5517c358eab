@@ -6,16 +6,6 @@ import java.util.*; //imports scanner
  *
  * A class to process card objects as a deck and calculate stats based on intrinsic properties of each card.
  *
- * @cards
- * @cardName
- * @convertedManaCost
- * @cardType
- * @power
- * @toughness
- * @color
- * @copyNumber
- * @set
- *
  */
 public class Deck {
 
@@ -96,7 +86,7 @@ public class Deck {
 	 * @spell
 	 * @landRatio
 	 * @creature
-	 * @nonCreature
+	 * @noncreature
 	 * @spellRatio
 	 * @nonLand
 	 * @totalCMC
@@ -162,18 +152,5 @@ public class Deck {
 		}
 		System.out.println("Your deck is " + standardLegality + " legal."); 
 		
-		//outputs game information
-		System.out.println();
-		System.out.println();
-		System.out.println("The minimum deck size for constructed is 60 cards.");
-		System.out.println();
-		System.out.println("Standard currently includes all cards in the sets: Return to Ravnica, Gatecrash, Dragon's Maze, Magic 2014, Theros, Born of the Gods, Journey Into Nyx, and Magic 2015.");
-		System.out.println();
-		System.out.println("Modern currently includes all cards in the 'new' card frame (since 8th Edition), with a banned list.");
-		System.out.println();
-		System.out.println("The following cards are banned from Modern tournaments: Ancestral Vision, Ancient Den, Blazing Shoal, Bloodbraid Elf, ");
-		System.out.println("	Chrome Mox, Cloudpost, Dark Depths, Deathrite Shaman, Dread Return, Glimpse of Nature, Golgari Grave-Troll, Great Furnace, Green Sun's Zenith, ");
-		System.out.println("	Hypergenesis, Jace the Mind Sculptor, Mental Misstep, Ponder, Preordain, Punishing Fire, Rite of Flame, Seat of the Synod, Second Sunrise, ");
-		System.out.println("	Seething Song, Sensei's Divining Top, Stoneforge Mystic, Skullclamp, Sword of the Meek, Tree of Tales, Umezawa's Jitte, and Vault of Whispers.");
 	}
 }

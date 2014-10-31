@@ -1,7 +1,7 @@
 /**
  * @author maddierook
  *
- * A class to represent one object (card) in the deck.
+ * Class to represent one object (card) in the deck
  *
  */
 public class Card {
@@ -17,7 +17,7 @@ public class Card {
 	public String set; 
 	
 	/**
-	 * A constructor that contains properties of each MTG card.
+	 * A constructor that contains traits of each MTG card
 	 * 
 	 * @param cardName1
 	 * @param convertedManaCost1

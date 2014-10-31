@@ -18,6 +18,7 @@ public class MtgDecklistReader {
 
 		Deck deck = new Deck(); //creates an instance of the Deck object
 		deck.load(); //creates an array of Card objects using the load method in the Deck class
+		
 		deck.analyze(); //runs analysis methods on the deck and prints output to the screen
 		
 	}

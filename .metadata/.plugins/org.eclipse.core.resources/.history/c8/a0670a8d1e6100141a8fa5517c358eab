@@ -1,21 +1,21 @@
-import java.io.*; //imports file not found
-import java.util.*; //imports scanner
+import java.io.*;
+import java.util.*;
 
+/**
+ * 
+ */
 
 /**
  * @author maddierook
- * 
- * The first class to process the file, called by the Deck class to populate an array of the appropriate size.
- * 
+ *
  */
 public class LineCounter {
 
 	public int numberOfLines;
 	
 	/**
-	 * A method to count the lines in the input file.
 	 * 
-	 * @return int Returns the number of lines in the file, as an integer.
+	 * @return
 	 * @throws FileNotFoundException
 	 */
 	public int lineCounter() throws FileNotFoundException{
