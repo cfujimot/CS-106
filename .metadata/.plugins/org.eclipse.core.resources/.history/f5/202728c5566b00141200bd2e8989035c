@@ -140,6 +140,7 @@ public class Deck {
 			}
 		}
 		System.out.println("Your land:spell ratio is " + (int)land1 + ":" + (int)spell1 + "."); 
+
 		
 		//calculates creature:noncreature ratio
 		double creature = 0;
@@ -190,7 +191,7 @@ public class Deck {
 		System.out.println("Your deck is " + standardLegality + " legal."); 
 		
 		//outputs game information
-		System.out.println("----------------------------------------------------");
+		System.out.println();
 		System.out.println();
 		System.out.println("The minimum deck size for constructed is 60 cards.");
 		System.out.println();

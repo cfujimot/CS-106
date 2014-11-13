@@ -94,8 +94,6 @@ public class Deck {
 	/**
 	 * A method to tally certain card stats and output them to the screen.
 	 * 
-	 * Ratio converter adapted from Kevin Fodness, <https://github.com/kevinfodness>
-	 * 
 	 * @deckSize
 	 * @land
 	 * @spell
@@ -129,17 +127,17 @@ public class Deck {
 		}
 		double landRatio= land/spell;
 		
-		//convert to ratio x:x...start at 1:1, then adjust until it matches. @author Kevin Fodness.
-		double land1 = 1; 
+		double land1 = 1; //start at 1:1
 		double spell1 = 1;
-		while (land1 / spell1 != landRatio) { 
+		while (land1 / spell1 != landRatio) { //adjust the ratio until it matches
 			if (land1 / spell1 < landRatio) {
 				land1++;
 			} else {
 				spell1++;
 			}
 		}
-		System.out.println("Your land:spell ratio is " + (int)land1 + ":" + (int)spell1 + "."); 
+		System.out.println("Your land:spell ratio is " + (int)land1 + ":" + (int)spell1 + "."); //output as a ratio x:x
+
 		
 		//calculates creature:noncreature ratio
 		double creature = 0;
@@ -152,18 +150,17 @@ public class Deck {
 			}
 		}
 		double spellRatio = creature/noncreature;
-		
-		//convert to ratio x:x...start at 1:1, then adjust until it matches. @author Kevin Fodness.
-		double creature1 = 1; 
+
+		double creature1 = 1; //start at 1:1
 		double noncreature1 = 1;
-		while (creature1 / noncreature1 != spellRatio) { 
+		while (creature1 / noncreature1 != spellRatio) { //adjust the ratio until it matches
 			if (creature1 / noncreature1 < spellRatio) {
 				creature1++;
 			} else {
 				noncreature1++;
 			}
 		}
-		System.out.println("Your creature-spell:non-creature-spell ratio is " + (int)creature1 + ":" + (int)noncreature1 + "."); 
+		System.out.println("Your creature-spell:non-creature-spell ratio is " + (int)creature1 + ":" + (int)noncreature1 + "."); //output as a ratio x:x
 
 		//calculates mean converted mana cost
 		double nonLand = 0;
@@ -190,7 +187,7 @@ public class Deck {
 		System.out.println("Your deck is " + standardLegality + " legal."); 
 		
 		//outputs game information
-		System.out.println("----------------------------------------------------");
+		System.out.println();
 		System.out.println();
 		System.out.println("The minimum deck size for constructed is 60 cards.");
 		System.out.println();
