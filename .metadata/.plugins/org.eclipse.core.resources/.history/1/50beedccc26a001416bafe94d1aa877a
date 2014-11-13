@@ -1,0 +1,77 @@
+import java.util.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class Project_6_Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("ARRAY LIST");
+
+		ArrayList <String> testArrayList = new ArrayList<String>();
+		testArrayList.add("0: The Fool");
+		testArrayList.add("1: The Magician");
+		testArrayList.add("2: The High Priestess");
+		testArrayList.add("3: The Empress");
+		
+		System.out.println("Prints the array list after populating 4 positions.");
+		System.out.println(testArrayList);
+		System.out.println();
+		
+		testArrayList.remove(2);
+		System.out.println("Prints the array list after removing The High Priestess.");
+		System.out.println(testArrayList);
+		System.out.println();
+		
+		System.out.println("Prints the modified array list using a for-each loop.");
+		for (String a : testArrayList) {
+			System.out.println(a);
+		}
+		System.out.println();
+		
+		System.out.println("Prints the modified array list using an iterator.");
+		Iterator <String> i = testArrayList.iterator();
+		while (i.hasNext()) {
+			System.out.println(i.next());
+		}
+		System.out.println();
+		
+		System.out.println("LINKED LIST");
+		LinkedList <String> testLinkedList = new LinkedList<String>();
+		testArrayList.add("4: The Emperor");
+		testArrayList.add("5: The Hierophant");
+		testArrayList.add("6: The Lovers");
+		testArrayList.add("7: The Chariot");
+		
+		System.out.println("Prints the linked list after populating 4 positions.");
+		System.out.println(testLinkedList);
+		System.out.println();
+		
+		testArrayList.remove(1);
+		System.out.println("Prints the linked list after removing The Hierophant.");
+		System.out.println(testLinkedList);
+		System.out.println();
+		
+		System.out.println("Prints the modified linked list using a for-each loop.");
+		for (String l : testLinkedList) {
+			System.out.println(l);
+		}
+		System.out.println();
+		
+		System.out.println("Prints the modified linked list using an iterator.");
+		Iterator <String> j = testLinkedList.iterator();
+		while (j.hasNext()) {
+			System.out.println(j.next());
+		}
+		
+	}
+
+}

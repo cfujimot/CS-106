@@ -1,0 +1,43 @@
+import java.util.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class Project_6_Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ArrayList <String> testArrayList = new ArrayList<String>();
+		testArrayList.add("0: The Fool");
+		testArrayList.add("1: The Magician");
+		testArrayList.add("2: The High Priestess");
+		testArrayList.add("3: The Empress");
+		
+		System.out.println("Prints the array list after populating 4 positions.");
+		System.out.println(testArrayList);
+		System.out.println();
+		
+		testArrayList.remove(2);
+		System.out.println("Prints the array list after removing the High Priestess.");
+		System.out.println(testArrayList);
+		System.out.println();
+		
+		System.out.println("Prints the array list using a for-each loop.");
+		for (String a : testArrayList) {
+			System.out.println(a);
+		}
+		System.out.println();
+		
+		System.out.println("Prints the array list using an iterator.");
+		Iterator <String> i = testArrayList.iterator();
+		System.out.println(i.next());
+	}
+
+}
