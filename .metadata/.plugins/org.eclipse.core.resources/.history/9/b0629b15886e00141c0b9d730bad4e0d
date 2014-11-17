@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class MajorArcana {
+
+	//TODO this is a constructor
+	public int number;
+	public String name;
+	public String mtgName;
+	public String uprightFlavor;
+	public String uprightOracle;
+	public String reversedFlavor;
+	public String reversedOracle;
+	
+	//TODO create an array with name, flavor text, and oracle text
+	//TODO be able to load each of these MajorArcana objects as a value for the integer keys in a HashMap
+}

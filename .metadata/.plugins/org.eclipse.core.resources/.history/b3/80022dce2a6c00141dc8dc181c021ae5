@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class MajorArcana {
+
+	//TODO create an array with name, flavor text, and oracle text
+	//TODO be able to load each of these MajorArcana objects as a value for the integer keys in a HashMap
+}

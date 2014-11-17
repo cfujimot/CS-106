@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotDeck {
+
+	public int number;
+	public String name;
+	public String mtgName;
+	public String uprightFlavor;
+	public String uprightOracle;
+	public String reversedFlavor;
+	public String reversedOracle;
+	
+	public void load () throws FileNotFoundException { 
+		
+		Scanner fileReader = new Scanner (new File("src/mtg major arcana.txt"));
+
+		//Option 1: line counter object, array into a deck of MajorArcana
+		//Option 2: 
+		LineCounter lines = new LineCounter(); //create a line counter method
+		MajorArcana[] cards = new MajorArcana[lines.lineCoutner()-1];
+		
+		HashSet<String> deck = new HashSet<String>();
+		
+		while (fileReader.hasNextLine()) {
+			deck.add(fileReader.nextLine());
+		}
+		
+		System.out.println(deck.toString());
+		
+	}
+	
+}

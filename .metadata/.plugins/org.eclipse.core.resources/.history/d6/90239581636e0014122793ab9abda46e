@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotDeck {
+
+	public void load () throws FileNotFoundException { 
+		HashSet<MajorArcana> tarotDeck = new HashSet<MajorArcana>();
+
+	}
+	
+}

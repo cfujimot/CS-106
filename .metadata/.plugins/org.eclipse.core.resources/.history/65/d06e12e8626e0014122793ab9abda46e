@@ -1,0 +1,20 @@
+//imports hash set capability
+import java.util.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotReader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		HashSet<MajorArcana> tarotDeck = new HashSet<MajorArcana>();
+		
+		
+	}
+
+}

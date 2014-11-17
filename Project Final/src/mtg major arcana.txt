@@ -1,0 +1,22 @@
+0	The Fool		naiveté, recklessness; innocence, beginnings
+1	The Magician		communication, skill, action, concentration, clear thinking; manipulation, poor planing 
+2	The High Priestess	intuition, wisdom, clairvoyance; hidden agendas
+3	The Empress		fertility, harmony, independence, productivity; creative block, dependence on others, loss of personal power
+4	The Emperor		willpower, rationality, responsibility; domination, inflexibility, single-mindedness
+5	The Hierophant		tradition, spiritual authority or mentor, inspiration; blind faith, abuse of power, misleading speech
+6	The Lovers		compassion, maturity, choice, growth; imbalance, misunderstanding, manipulation
+7	The Chariot		movement, progress, success, conviction; aggression, lack of direction or control, stagnation
+8	Justice			fairness, simplicity, integrity; dishonesty, retribution, inflexibility
+9	The Hermit		contemplation, introspection, perspective; isolation, loneliness, withdrawal
+10	The Wheel		abundance, chance, a turning point; bad luck, external forces beyond your control
+11	Strength		courage, patience, control; weakness, self-doubt, lack of self-discipline
+12	The Hanged Man		indecision, betrayal, unnecessary sacrifice; compassion, reversal of expectations, a new point of view
+13	Death			endings, transformation, renewal; detachment, resistance to change
+14	Temperance		balance, fluidity, synthesis, reconciliation, compromise; imbalance, lack of long-term vision, material excess
+15	The Devil		temptation, struggle, manipulation, bondage; escape from illusion, breaking from old patterns, new insight
+16	The Tower		sudden change, upheaval, a power struggle; renewal, destruction of old forms, realization
+17	The Star		self-confidence, peace after the storm, optimism; despair, discouragement, insecurity, lack of progress or vision
+18	The Moon		instincts, emotions, dreams, imagination; indecision, disillusionment, anxiety, insecurity
+19	The Sun			joy, protection, expansive creativity, cooperation; lack of success, creative block, fear of the future
+20	Judgement		conclusions, reward, second chances, forgiveness; self-doubt, misconceptions, jumping to conclusions
+21	The World		completion, interconnectedness, enlightenment; lack of vision, failure to see the big picture, small-mindedness

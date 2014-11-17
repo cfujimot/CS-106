@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotDeck {
+
+	
+	
+	
+	public void load () throws FileNotFoundException { 
+		
+		HashSet<MajorArcana> deck = new HashSet<MajorArcana>();
+
+		Scanner fileReader = new Scanner (new File("src/mtg major arcana.txt"));
+
+	}
+	
+}
