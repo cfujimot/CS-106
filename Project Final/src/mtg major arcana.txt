@@ -1,22 +1,29 @@
-0	The Fool		naiveté, recklessness; innocence, beginnings
-1	The Magician		communication, skill, action, concentration, clear thinking; manipulation, poor planing 
-2	The High Priestess	intuition, wisdom, clairvoyance; hidden agendas
-3	The Empress		fertility, harmony, independence, productivity; creative block, dependence on others, loss of personal power
-4	The Emperor		willpower, rationality, responsibility; domination, inflexibility, single-mindedness
-5	The Hierophant		tradition, spiritual authority or mentor, inspiration; blind faith, abuse of power, misleading speech
-6	The Lovers		compassion, maturity, choice, growth; imbalance, misunderstanding, manipulation
-7	The Chariot		movement, progress, success, conviction; aggression, lack of direction or control, stagnation
-8	Justice			fairness, simplicity, integrity; dishonesty, retribution, inflexibility
-9	The Hermit		contemplation, introspection, perspective; isolation, loneliness, withdrawal
-10	The Wheel		abundance, chance, a turning point; bad luck, external forces beyond your control
-11	Strength		courage, patience, control; weakness, self-doubt, lack of self-discipline
-12	The Hanged Man		indecision, betrayal, unnecessary sacrifice; compassion, reversal of expectations, a new point of view
-13	Death			endings, transformation, renewal; detachment, resistance to change
-14	Temperance		balance, fluidity, synthesis, reconciliation, compromise; imbalance, lack of long-term vision, material excess
-15	The Devil		temptation, struggle, manipulation, bondage; escape from illusion, breaking from old patterns, new insight
-16	The Tower		sudden change, upheaval, a power struggle; renewal, destruction of old forms, realization
-17	The Star		self-confidence, peace after the storm, optimism; despair, discouragement, insecurity, lack of progress or vision
-18	The Moon		instincts, emotions, dreams, imagination; indecision, disillusionment, anxiety, insecurity
-19	The Sun			joy, protection, expansive creativity, cooperation; lack of success, creative block, fear of the future
-20	Judgement		conclusions, reward, second chances, forgiveness; self-doubt, misconceptions, jumping to conclusions
-21	The World		completion, interconnectedness, enlightenment; lack of vision, failure to see the big picture, small-mindedness
+Number	Title		Upright Name	Upright Flavor	Upright Meaning	Reversed Name	Reversed Flavor	Reversed Meaning
+0	The Fool	Riddlekepper	F: “Fools surrender their sanity to his riddles. Even greater fools try to solve them.”	M: naivety, recklessness.	Eager Cadet	F: “The enthusiasm of the young, sharpened by the discipline of a soldier.”	M: innocence, beginnings.
+1	The Magician	Think Twice	F: “Either I know just the spell I need, or I’m about to.”	M: communication, skill, action, concentration, clear thinking.	Mind Sculpt	F: ”Your mind was a curious mix of madness and genius. I just took away the genius."	M: manipulation, poor planning.
+2	The High Priestess	Archaeomancer	F: ”Words of power never disappear. They sleep, awaiting those with the will to rouse them.”	M: intuition, wisdom, clairvoyance.	Stealer of Secrets	F: “The Dimir would hire her, if only they knew where she lived. The Azorius would condemn her, if only they knew her name.”	M: hidden agendas.
+3	The Empress	Thraben Valiant	F: “Once more into Devil's Breach, soldiers. I want another devil tail for my collection."	M: fertility, harmony, independence, productivity.	Tricks of the Trade	F: “Pathetic. You might as well have protected your treasures with a paper box and some string."	M: creative bloick, dependence on others, loss of personal power.
+4	The Emperor	Bile Blight	F: “Not an arrow loosed, javelin thrown, nor sword raised. None were needed.”	M: willpower, rationality, responsibility.	Cancel	F: “It is forbidden. Asking why is irrelevant."	M: domination, inflexibility, single-mindedness.
+5	The Hierophant	Sage’s Row Denizen	F: ”I offer you wisdom untainted by false loyalty, learning free of any guild's agenda."	M: tradition, spiritual authority or mentor, inspiration.	Murmuring Phantasm	F: “The most insidious thing in the world is nonsense that sounds just plausible enough to listen to.”	M: blind faith, abuse of power, misleading speech.
+6	The Lovers	Guardians of Meletis	F: “The histories speak of two feuding rulers whose deaths were celebrated and whose monuments symbolized the end of their wars. In truth they were peaceful lovers, their story lost to the ages.”	M: compassion, maturity, choice, growth.	High Priest of Penance	F: “All I require is faith, loyalty, obedience, trust, and complete and utter devotion."	M: imbalance, misunderstanding, manipulation
+7	The Chariot	Aspect of Hydra	F: “Even alone I outnumber you.”	M: movement, progress, success, conviction.	Celestial Flare	F: “You were defeated the moment you declared your aggression.”	M: aggression, lack of direction or control, stagnation.
+8	Justice	Titanic Growth	F: “The pup looked over the treetops, eyeing the man who just yesterday had kicked her. Suddenly, her hunger was infused with pure delight.”	M: fairness, simplicity, integrity.	Punish the Enemy	F: “When justice descends, the servant will burn with the master.”	M: dishonesty, retribution, inflexibility.
+9	The Hermit	Fate Unraveler	F: “Never forget that the life you've built can be undone by a single loose thread.”	M: contemplation, introspection, perspective.	Killing Glare	F: “A casual glance into a dark corner may be your last.”	M: isolation, loneliness, withdrawal.
+10	The Wheel	Opportunity	F: “Opportunity isn’t something you wait for. It’s something you create.”	M: abundance, chance, a turning point.	Coastline Chimera	F: “Seeing a chimera overhead foretells good fortune, but only because seeing one any closer foretells dismemberment.”	M: bad luck, external forces beyond your control.
+11	Strength	Phantom Warrior	F: “The construction of a defense is not accomplished by adding bricks."	M: courage, patience, control.	Wall of Swords	F: "When I said we needed more swords to protect the realm, this was not quite what I had in mind."	M: weakness, self-doubt, lack of self-discipline.
+12	The Hanged Man	Evil Twin	F: “You can always tell the evil one by the dagger he's sticking in you.”	M: indecision, betrayal, unnecessary sacrifice.	Outwit	F: “The student asks how a spell is begun. The master ponders what ends it.”	M: compassion, reversal of expectations, a new point of view.
+13	Death	Prophetic Flamespeaker	F: “Fire to destroy. Fire to create.”	M: endings, transformation, renewal.	Army of the Damned	F:	“Sometimes death comes knocking. Sometimes it tears down the walls.”	M: detachment, resistance to change.
+14	Temperance	Golden Hind	F: "It is not yours to hunt, mortal. Be content with its beauty alone."	M: balance, fluidity, synthesis, reconciliation, compromise.	Assault Strobe	F: “When breaking someone's face once just isn't enough.”	M: imbalance, lack of long-term vision, material excess.
+15	The Devil	Bog Wraith	F: “She died in this swamp, and so will you.”	M: temptation, struggle, manipulation, bondage.	Retraction Helix	F: “Where the geometries of the world collapse, a master of the Æther can harvest power beyond comprehending.”	M: escape from illusion, breaking from old patterns, new insight.
+16	The Tower	Blasphemous Act	F: “Holy places are no longer sanctuary from death, and death is no longer sanctuary from anything."	M: sudden change, upheaval, a power struggle.	Pillar of War	F: “Just because a temple has no guards doesn't mean it's undefended.”	M: renewal, destruction of old forms, realization.
+17	The Star	Mending Touch	F: "The gift of life must be freely given. Anything less would diminish us all.”	M: self-confidence, peace after the storm, optimism.	Mending Hands	F: “I can staunch their blood, mend their flesh, and knit their bones. But I cannot restore their hope."	M: despair, discouragement, insecurity, lack of progress or vision.
+18	The Moon	Elvish Visionary	F: "From a tiny sprout, the greatest trees grow and flourish. May the seeds of your mind be equally fruitful."	M: instincts, emotions, dreams, imagination.	Fate Foretold	F: “The tale of her life was already written, but that didn't mean she could predict the ending.”	M: indecision, disillusionment, anxiety, insecurity.
+19	The Sun	Chariot of the Sun	F: “Sun follows Moon until she tires, then carries her until she's strong / and runs ahead of him again.”	M: joy, protection, expansive creativity, cooperation.	Last Word	F: “Someday, someone will best me. But it won't be today, and it won't be you.”	M: lack of success, creative block, fear of the future.
+20	Judgement	Isperia, Supreme Judge	F: “I serve only justice. But through that duty, I serve all of Ravnica."	M: conclusions, reward, second chances, forgiveness.	Lyev Decree	F: “The Azorius have so many codes and statutes that you're always in violation of one of them.”	M: self-doubt, misconceptions, jumping to conclusions.
+21	The World	Wheel of Sun and Moon	F: “Every life ends, but life itself never does.”	M: completion, interconnectedness, enlightenment.	Ray of Dissolution	F: “The works of one god last only as long as the patience of another.”	M: lack of vision, failure to see the big picture, small-mindedness.	
+
+
+
+
+
+
