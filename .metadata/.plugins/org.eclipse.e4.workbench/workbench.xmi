@@ -82,7 +82,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_fO3U3E9lEeSdAONB3MOW8w" containerData="8370" selectedElement="__KxhQGrDEeSv0q8IRBWCWg" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="__KxhQGrDEeSv0q8IRBWCWg" containerData="8516" selectedElement="_fO3U4k9lEeSdAONB3MOW8w">
+              <children xsi:type="basic:PartSashContainer" xmi:id="__KxhQGrDEeSv0q8IRBWCWg" containerData="8516" selectedElement="_fO3U3U9lEeSdAONB3MOW8w">
                 <children xsi:type="advanced:Placeholder" xmi:id="_fO3U3U9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.editorss" containerData="6722" ref="_fOh9oE9lEeSdAONB3MOW8w"/>
                 <children xsi:type="basic:PartStack" xmi:id="_fO3U4k9lEeSdAONB3MOW8w" elementId="bottom" containerData="3278" selectedElement="_fO3U509lEeSdAONB3MOW8w">
                   <tags>newtablook</tags>
@@ -127,30 +127,30 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_fOh9oE9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.editorss" selectedElement="_fOh9oU9lEeSdAONB3MOW8w">
-      <children xsi:type="basic:PartStack" xmi:id="_fOh9oU9lEeSdAONB3MOW8w" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_rarQ0HDXEeSpauXCmucaDA">
+      <children xsi:type="basic:PartStack" xmi:id="_fOh9oU9lEeSdAONB3MOW8w" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_rQUa8HDXEeSpauXCmucaDA">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_rarQ0HDXEeSpauXCmucaDA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TarotReader.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TarotReader.java&quot; partName=&quot;TarotReader.java&quot; title=&quot;TarotReader.java&quot; tooltip=&quot;Project Final/src/TarotReader.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project Final/src/TarotReader.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;869&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TarotReader.java&quot; partName=&quot;TarotReader.java&quot; title=&quot;TarotReader.java&quot; tooltip=&quot;Project Final/src/TarotReader.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project Final/src/TarotReader.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;625&quot; selectionTopPixel=&quot;195&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_rCXegHDXEeSpauXCmucaDA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MajorArcana.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MajorArcana.java&quot; partName=&quot;MajorArcana.java&quot; title=&quot;MajorArcana.java&quot; tooltip=&quot;Project Final/src/MajorArcana.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project Final/src/MajorArcana.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;744&quot; selectionTopPixel=&quot;200&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MajorArcana.java&quot; partName=&quot;MajorArcana.java&quot; title=&quot;MajorArcana.java&quot; tooltip=&quot;Project Final/src/MajorArcana.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project Final/src/MajorArcana.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;744&quot; selectionTopPixel=&quot;271&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_rQUa8HDXEeSpauXCmucaDA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TarotDeck.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TarotDeck.java&quot; partName=&quot;TarotDeck.java&quot; title=&quot;TarotDeck.java&quot; tooltip=&quot;Project Final/src/TarotDeck.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project Final/src/TarotDeck.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2420&quot; selectionTopPixel=&quot;767&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TarotDeck.java&quot; partName=&quot;TarotDeck.java&quot; title=&quot;TarotDeck.java&quot; tooltip=&quot;Project Final/src/TarotDeck.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project Final/src/TarotDeck.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2617&quot; selectionTopPixel=&quot;1288&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -267,7 +267,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIYSUE9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_S5Z7AHYoEeSafPo1UlBr0A" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_epnSuE9lEeSdAONB3MOW8w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Su7T8HpHEeSrNYtdZaCPXQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_epnSuE9lEeSdAONB3MOW8w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIY5YE9lEeSdAONB3MOW8w" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -291,7 +291,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIZgcE9lEeSdAONB3MOW8w" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_S5gosHYoEeSafPo1UlBr0A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_epldoE9lEeSdAONB3MOW8w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_SvCBoXpHEeSrNYtdZaCPXQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_epldoE9lEeSdAONB3MOW8w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fIZgcU9lEeSdAONB3MOW8w" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -681,7 +681,7 @@
     <bindings xmi:id="_eq8vc09lEeSdAONB3MOW8w" keySequence="ALT+COMMAND+Q Q" command="_epkPhU9lEeSdAONB3MOW8w">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_Sg24IXYoEeSafPo1UlBr0A" keySequence="COMMAND+CTRL+F" command="_erSGo09lEeSdAONB3MOW8w"/>
+    <bindings xmi:id="_SUEj8XpHEeSrNYtdZaCPXQ" keySequence="COMMAND+CTRL+F" command="_erSGo09lEeSdAONB3MOW8w"/>
   </bindingTables>
   <bindingTables xmi:id="_eqmKJE9lEeSdAONB3MOW8w" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_epwcqE9lEeSdAONB3MOW8w">
     <bindings xmi:id="_eqmxME9lEeSdAONB3MOW8w" keySequence="COMMAND+SHIFT+C" command="_ephzLE9lEeSdAONB3MOW8w"/>
@@ -795,7 +795,7 @@
     <bindings xmi:id="_eq4eBU9lEeSdAONB3MOW8w" keySequence="COMMAND+G" command="_epmEpU9lEeSdAONB3MOW8w"/>
   </bindingTables>
   <bindingTables xmi:id="_erSttU9lEeSdAONB3MOW8w" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_eo12oE9lEeSdAONB3MOW8w">
-    <bindings xmi:id="_Sg3fMHYoEeSafPo1UlBr0A" keySequence="M1+W" command="_erSts09lEeSdAONB3MOW8w"/>
+    <bindings xmi:id="_SUFLAHpHEeSrNYtdZaCPXQ" keySequence="M1+W" command="_erSts09lEeSdAONB3MOW8w"/>
   </bindingTables>
   <bindingTables xmi:id="_fOjy0U9lEeSdAONB3MOW8w" bindingContext="_fOjy0E9lEeSdAONB3MOW8w"/>
   <bindingTables xmi:id="_fOjy009lEeSdAONB3MOW8w" bindingContext="_fOjy0k9lEeSdAONB3MOW8w"/>

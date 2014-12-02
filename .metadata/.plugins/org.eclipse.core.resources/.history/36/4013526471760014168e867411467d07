@@ -94,37 +94,27 @@ public class TarotDeck {
 	 * A method to perform a single-card reading
 	 */
 	public void single() {
-		HashSet<MajorArcana> hand = new HashSet<MajorArcana>();
 		
-		double next = Math.random();
-		int n = (int)next;
-		
-		//TODO remove one card from the HashSet as the hand
-		//TODO print ascii of the card
 	}
 	
 	/**
 	 * A method to perform a past, present, future reading
 	 */
 	public void triple() {
-		//TODO remove three cards in order from the HashSet
-		//TODO preint ascii of the spread
+		
 	}
 	
 	/**
 	 * A method to perform a pentagram reading
 	 */
 	public void pentagram() {
-		//TODO remove five cards in order from the HashSet
-		//TODO print ascii of the spread **this will be difficult
+		
 	}
 	
 	/**
 	 * A method to perform a days-of-the-week reading
 	 */
 	public void week() {
-		//TODO remove seven cards in order from the HashSet
-		//TODO print ascii of the spread **this will be very difficult
 		
 	}
 	

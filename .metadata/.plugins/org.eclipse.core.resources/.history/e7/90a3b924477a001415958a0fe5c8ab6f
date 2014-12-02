@@ -96,8 +96,8 @@ public class TarotDeck {
 	public void single() {
 		HashSet<MajorArcana> hand = new HashSet<MajorArcana>();
 		
-		double next = Math.random();
-		int n = (int)next;
+		double random = Math.random();
+		int next = (int)random;
 		
 		//TODO remove one card from the HashSet as the hand
 		//TODO print ascii of the card

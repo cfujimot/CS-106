@@ -20,30 +20,25 @@ public class TarotReader {
 		System.out.println("	2. Past, Present, Future");
 		System.out.println("	3. Pentagram");
 		System.out.println("	4. Days of the Week");
-		System.out.println(Math.random());
 		
-		int spread = 0;
+		//Scanner console = new Scanner(System.in);
+		//int spread = console.nextInt();
+		
+		//while (!console.hasNextInt()) {
+			//System.out.println("You entered a non-integer value. Please enter the integer of the spread you would like.");
+		//}
+				
+		//if (spread == 1) {
+			
+		//} else if (spread == 2) {
+			
+		//}
+		
 		TarotDeck deck = new TarotDeck();
 		deck.load();
-		
-		/*Scanner console = new Scanner(System.in);
-		spread = console.nextInt();
-		
-		while (!console.hasNextInt()) {
-			System.out.println("You entered a non-integer value. Please enter the integer of the spread you would like.");
-		}
-	
-		*/
 
-		if (spread == 1) {
-			deck.single();
-		} else if (spread == 2) {
-			deck.triple();
-		} else if (spread == 3) {
-			deck.pentagram();
-		} else if (spread == 4) {
-			deck.week();
-		}
+		//if spread == 1 ... deck.single();
+		//deck.triple();
 	}
 
 }

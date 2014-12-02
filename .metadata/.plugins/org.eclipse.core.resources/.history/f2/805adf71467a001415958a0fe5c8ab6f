@@ -20,7 +20,6 @@ public class TarotReader {
 		System.out.println("	2. Past, Present, Future");
 		System.out.println("	3. Pentagram");
 		System.out.println("	4. Days of the Week");
-		System.out.println(Math.random());
 		
 		int spread = 0;
 		TarotDeck deck = new TarotDeck();
@@ -34,16 +33,14 @@ public class TarotReader {
 		}
 	
 		*/
+		
 
 		if (spread == 1) {
 			deck.single();
 		} else if (spread == 2) {
 			deck.triple();
-		} else if (spread == 3) {
-			deck.pentagram();
-		} else if (spread == 4) {
-			deck.week();
 		}
+		//deck.triple();
 	}
 
 }
