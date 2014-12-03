@@ -1,0 +1,73 @@
+import java.io.*;
+import java.util.ArrayList;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotHand {
+	
+	/**
+	 * A method to perform a single-card reading
+	 */
+	public void single() throws FileNotFoundException {
+		
+		TarotDeck deck = new TarotDeck();
+		deck.load();
+	
+		ArrayList<MajorArcana> hand = new ArrayList<MajorArcana>();
+		
+		/*
+		int n = -1;
+		while (n <= 0 || n >= 43) {
+			double next = Math.random();
+			n = (int)next;
+		}
+		*/
+		
+		//test value
+		int n = 5;
+		
+		hand.add(cards.get(n)); //attempting to use the "key" functionality of Maps to pull out cards from the deck
+		cards.remove(cards.get(n));
+		
+		System.out.println(hand.toString()); //TODO how to print as a string?
+					
+	}
+		
+		//TODO remove one card from the HashSet as the hand
+		//TODO print ascii of the card
+	
+	/**
+	 * A method to perform a past, present, future reading
+	 */
+	public void triple() {
+		//TODO remove three cards in order from the HashSet
+		//TODO preint ascii of the spread
+	}
+	
+	/**
+	 * A method to perform a pentagram reading
+	 */
+	public void pentagram() {
+		//TODO remove five cards in order from the HashSet
+		//TODO print ascii of the spread **this will be difficult
+	}
+	
+	/**
+	 * A method to perform a days-of-the-week reading
+	 */
+	public void week() {
+		//TODO remove seven cards in order from the HashSet
+		//TODO print ascii of the spread **this will be very difficult
+		
+	}
+	
+
+	
+
+}

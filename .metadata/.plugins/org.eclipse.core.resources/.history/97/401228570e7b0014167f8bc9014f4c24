@@ -1,0 +1,120 @@
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotDeck {
+
+	public int number;
+	public String name;
+	public String mtgName;
+	public String flavor;
+	public String meaning;
+	public HashMap<Integer, MajorArcana> cards;
+	
+	/**
+	 * 
+	 * @throws FileNotFoundException
+	 */
+	public void load() throws FileNotFoundException { 
+		
+		Scanner fileReader = new Scanner (new File("src/mtg major arcana.txt"));
+
+		//Option 1: line counter object, array into a deck of MajorArcana
+			//LineCounter lines = new LineCounter(); ...TODO: create a line counter method
+			//MajorArcana[] cards = new MajorArcana[lines.lineCoutner()-1]; ...creates an empty array
+		
+		//Option 2: populate the set, with each card is its own Major Arcana object
+			//MajorArcana fool = new MajorArcana(fileReader.nextLine); ...where number = fileReader.nextInt(); name = fileReader.next()...
+			//Then place these MajorArcana objects (all 22 of them) into a HashSet called deck
+		cards = new HashMap<Integer, MajorArcana>();
+		
+		fileReader.nextLine(); //skips the first line of identifiers in the text file
+		
+		//read in each property of MajorArcana, for each card (line in the file)
+		int index = 0;
+		while (fileReader.hasNextLine()) {
+			
+			number = fileReader.nextInt();
+			
+			while (!fileReader.next().equals("N:")) {
+				name = fileReader.next();
+			}
+			
+			while (!fileReader.next().equals("F:")) {
+				mtgName = fileReader.next();
+			}
+				
+			while (!fileReader.next().equals("Meaning:")) { 
+				flavor = fileReader.next();
+			}
+				
+			meaning = fileReader.nextLine();
+				
+			cards.put(index, new MajorArcana(number, name, mtgName, flavor, meaning));
+		
+			index ++;		
+		}
+		fileReader.close();
+				
+	}
+	
+	/**
+	 * A method to perform a single-card reading
+	 */
+	public void single() {		
+		ArrayList<MajorArcana> hand = new ArrayList<MajorArcana>();
+		
+		/*
+		int n = -1;
+		while (n <= 0 || n >= 43) {
+			double next = Math.random();
+			n = (int)next;
+		}
+		*/
+		
+		//test value
+		int n = 5;
+		
+		hand.add(cards.get(n));
+		cards.remove(cards.get(n));
+		
+		System.out.println(hand.toString()); //TODO how to print as a string?
+					
+	}
+		
+		//TODO remove one card from the HashSet as the hand
+		//TODO print ascii of the card
+	
+	/**
+	 * A method to perform a past, present, future reading
+	 */
+	public void triple() {
+		//TODO remove three cards in order from the HashSet
+		//TODO preint ascii of the spread
+	}
+	
+	/**
+	 * A method to perform a pentagram reading
+	 */
+	public void pentagram() {
+		//TODO remove five cards in order from the HashSet
+		//TODO print ascii of the spread **this will be difficult
+	}
+	
+	/**
+	 * A method to perform a days-of-the-week reading
+	 */
+	public void week() {
+		//TODO remove seven cards in order from the HashSet
+		//TODO print ascii of the spread **this will be very difficult
+		
+	}
+	
+}

@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotHand {
+	
+	public void single() {
+		
+		TarotDeck deck = new TarotDeck();
+		deck.load();
+		
+	}
+	
+
+	
+
+}

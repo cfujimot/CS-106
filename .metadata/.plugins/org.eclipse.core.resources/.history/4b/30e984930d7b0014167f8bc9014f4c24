@@ -1,0 +1,23 @@
+import java.io.*;
+
+/**
+ * 
+ */
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotHand {
+	
+	public void single() throws FileNotFoundException {
+		
+		TarotDeck deck = new TarotDeck();
+		deck.load();
+		
+	}
+	
+
+	
+
+}
