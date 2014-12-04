@@ -80,7 +80,7 @@ public class TarotDeck {
 	/**
 	 * A method to perform a single card reading
 	 */
-	public void single() {
+	public Queue<MajorArcana> single() {
 		
 		//prints ascii of the spread
 		System.out.println();
@@ -110,16 +110,15 @@ public class TarotDeck {
 			singleHand.add(cards2.pop());
 			cards1.pop();
 		}
-		
-		System.out.println(singleHand);
-	
+			
+		return singleHand;
 	}
 
 	
 	/**
 	 * A method to perform a past, present, future reading
 	 */
-	public void triple() {
+	public Queue<MajorArcana> triple() {
 		//prints ascii of the spread
 		System.out.println();
 		System.out.println(" _______    _______    _______");
@@ -132,22 +131,30 @@ public class TarotDeck {
 		System.out.println("   Past     Present    Future");
 		System.out.println();
 				
+		Queue<MajorArcana> tripleHand = new LinkedList<MajorArcana>();
+
+		return tripleHand;
 	}
 	
 	/**
 	 * A method to perform a pentagram reading
 	 */
-	public void pentagram() {
-		//TODO remove five cards in order from the HashSet
-		//TODO print ascii of the spread **this will be difficult
+	public Queue<MajorArcana> pentagram() {
+		
+		Queue<MajorArcana> pentHand = new LinkedList<MajorArcana>();
+
+		return pentHand;
+		
 	}
 	
 	/**
 	 * A method to perform a days-of-the-week reading
 	 */
-	public void week() {
-		//TODO remove seven cards in order from the HashSet
-		//TODO print ascii of the spread **this will be very difficult
+	public Queue<MajorArcana> week() {
+
+		Queue<MajorArcana> weekHand = new LinkedList<MajorArcana>();
+
+		return weekHand;
 		
 	}
 

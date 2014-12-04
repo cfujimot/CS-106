@@ -22,6 +22,8 @@ public class MajorArcana {
 	 */
 	public MajorArcana(String number1, String name1, String mtgName1, String flavor1, String meaning1){
 	
+		//TODO create an array or set with name, flavor text, and oracle text
+		//TODO be able to load each of these MajorArcana objects as a value for the integer keys in a HashSet
 		this.number =  number1;
 		this.name = name1;
 		this.mtgName = mtgName1;

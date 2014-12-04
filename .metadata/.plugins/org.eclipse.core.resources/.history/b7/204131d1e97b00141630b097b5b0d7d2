@@ -40,12 +40,19 @@ public class TarotReader {
 		if (spread.equals("1")) {
 			System.out.println(deck.single());
 		} else if (spread.equals("2")) {
-			System.out.println(deck.triple());
+			deck.triple();
 		} else if (spread.equals("3")) {
-			System.out.println(deck.pentagram());
+			deck.pentagram();
 		} else if (spread.equals("4")) {
-			System.out.println(deck.week());
+			deck.week();
 		}
 	}
 	
+	public String spreadToString() {
+		
+		
+		
+		return null;
+	}
+
 }
