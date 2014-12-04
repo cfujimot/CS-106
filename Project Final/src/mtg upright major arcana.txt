@@ -1,23 +1,23 @@
 Number	Title	Name	Flavor	Meaning	
-0	The Fool	N: Riddlekepper	F: “Fools surrender their sanity to his riddles. Even greater fools try to solve them.”	Meaning: naivety, recklessness.
-1	The Magician	N: Think Twice	F: “Either I know just the spell I need, or I’m about to.”	Meaning: communication, skill, action, concentration, clear thinking.
-2	The High Priestess	N: Archaeomancer	F: ”Words of power never disappear. They sleep, awaiting those with the will to rouse them.”	Meaning: intuition, wisdom, clairvoyance.
-3	The Empress	N: Thraben Valiant	F: “Once more into Devil's Breach, soldiers. I want another devil tail for my collection."	Meaning: fertility, harmony, independence, productivity.
-4	The Emperor	N: Bile Blight	F: “Not an arrow loosed, javelin thrown, nor sword raised. None were needed.”	Meaning: willpower, rationality, responsibility.
-5	The Hierophant	N: Sage’s Row Denizen	F: ”I offer you wisdom untainted by false loyalty, learning free of any guild's agenda."	Meaning: tradition, spiritual authority or mentor, inspiration.
-6	The Lovers	N: Guardians of Meletis	F: “The histories speak of two feuding rulers whose deaths were celebrated and whose monuments symbolized the end of their wars. In truth they were peaceful lovers, their story lost to the ages.”	Meaning: compassion, maturity, choice, growth.
-7	The Chariot	N: Aspect of Hydra	F: “Even alone I outnumber you.”	Meaning: movement, progress, success, conviction.
-8	Justice	N: Titanic Growth	F: “The pup looked over the treetops, eyeing the man who just yesterday had kicked her. Suddenly, her hunger was infused with pure delight.”	Meaning: fairness, simplicity, integrity.
-9	The Hermit	N: Fate Unraveler	F: “Never forget that the life you've built can be undone by a single loose thread.”	Meaning: contemplation, introspection, perspective.
-10	The Wheel	N: Opportunity	F: “Opportunity isn’t something you wait for. It’s something you create.”	Meaning: abundance, chance, a turning point.
-11	Strength	N: Phantom Warrior	F: “The construction of a defense is not accomplished by adding bricks."	Meaning: courage, patience, control.
-12	The Hanged Man	N: Evil Twin	F: “You can always tell the evil one by the dagger he's sticking in you.”	Meaning: indecision, betrayal, unnecessary sacrifice.
-13	Death	N: Prophetic Flamespeaker	F: “Fire to destroy. Fire to create.”	Meaning: endings, transformation, renewal.
-14	Temperance	N: Golden Hind	F: "It is not yours to hunt, mortal. Be content with its beauty alone."	Meaning: balance, fluidity, synthesis, reconciliation, compromise.
-15	The Devil	N: Bog Wraith	F: “She died in this swamp, and so will you.”	Meaning: temptation, struggle, manipulation, bondage.
-16	The Tower	N: Blasphemous Act	F: “Holy places are no longer sanctuary from death, and death is no longer sanctuary from anything."	Meaning: sudden change, upheaval, a power struggle.
-17	The Star	N: Mending Touch	F: "The gift of life must be freely given. Anything less would diminish us all.”	Meaning: self-confidence, peace after the storm, optimism.
-18	The Moon	N: Elvish Visionary	F: "From a tiny sprout, the greatest trees grow and flourish. May the seeds of your mind be equally fruitful."	Meaning: instincts, emotions, dreams, imagination.
-19	The Sun	N: Chariot of the Sun	F: “Sun follows Moon until she tires, then carries her until she's strong / and runs ahead of him again.”	Meaning: joy, protection, expansive creativity, cooperation.
-20	Judgement	N: Isperia, Supreme Judge	F: “I serve only justice. But through that duty, I serve all of Ravnica."	Meaning: conclusions, reward, second chances, forgiveness.
-21	The World	N: Wheel of Sun and Moon	F: “Every life ends, but life itself never does.”	Meaning: completion, interconnectedness, enlightenment.
+0	The Fool	Riddlekepper	“Fools surrender their sanity to his riddles. Even greater fools try to solve them.”	Meaning: naivety, recklessness.
+1	The Magician	Think Twice	“Either I know just the spell I need, or I’m about to.”	Meaning: communication, skill, action, concentration, clear thinking.
+2	The High Priestess	Archaeomancer	”Words of power never disappear. They sleep, awaiting those with the will to rouse them.”	Meaning: intuition, wisdom, clairvoyance.
+3	The Empress	Thraben Valiant	“Once more into Devil's Breach, soldiers. I want another devil tail for my collection."	Meaning: fertility, harmony, independence, productivity.
+4	The Emperor	Bile Blight	“Not an arrow loosed, javelin thrown, nor sword raised. None were needed.”	Meaning: willpower, rationality, responsibility.
+5	The Hierophant	Sage’s Row Denizen	”I offer you wisdom untainted by false loyalty, learning free of any guild's agenda."	Meaning: tradition, spiritual authority or mentor, inspiration.
+6	The Lovers	Guardians of Meletis	“The histories speak of two feuding rulers whose deaths were celebrated and whose monuments symbolized the end of their wars. In truth they were peaceful lovers, their story lost to the ages.”	Meaning: compassion, maturity, choice, growth.
+7	The Chariot	Aspect of Hydra	“Even alone I outnumber you.”	Meaning: movement, progress, success, conviction.
+8	Justice	Titanic Growth	“The pup looked over the treetops, eyeing the man who just yesterday had kicked her. Suddenly, her hunger was infused with pure delight.”	Meaning: fairness, simplicity, integrity.
+9	The Hermit	Fate Unraveler	“Never forget that the life you've built can be undone by a single loose thread.”	Meaning: contemplation, introspection, perspective.
+10	The Wheel	Opportunity	“Opportunity isn’t something you wait for. It’s something you create.”	Meaning: abundance, chance, a turning point.
+11	Strength	Phantom Warrior	“The construction of a defense is not accomplished by adding bricks."	Meaning: courage, patience, control.
+12	The Hanged Man	Evil Twin	“You can always tell the evil one by the dagger he's sticking in you.”	Meaning: indecision, betrayal, unnecessary sacrifice.
+13	Death	Prophetic Flamespeaker	“Fire to destroy. Fire to create.”	Meaning: endings, transformation, renewal.
+14	Temperance	Golden Hind	"It is not yours to hunt, mortal. Be content with its beauty alone."	Meaning: balance, fluidity, synthesis, reconciliation, compromise.
+15	The Devil	Bog Wraith	“She died in this swamp, and so will you.”	Meaning: temptation, struggle, manipulation, bondage.
+16	The Tower	Blasphemous Act	“Holy places are no longer sanctuary from death, and death is no longer sanctuary from anything."	Meaning: sudden change, upheaval, a power struggle.
+17	The Star	Mending Touch	"The gift of life must be freely given. Anything less would diminish us all.”	Meaning: self-confidence, peace after the storm, optimism.
+18	The Moon	Elvish Visionary	"From a tiny sprout, the greatest trees grow and flourish. May the seeds of your mind be equally fruitful."	Meaning: instincts, emotions, dreams, imagination.
+19	The Sun	Chariot of the Sun	“Sun follows Moon until she tires, then carries her until she's strong / and runs ahead of him again.”	Meaning: joy, protection, expansive creativity, cooperation.
+20	Judgement	Isperia, Supreme Judge	“I serve only justice. But through that duty, I serve all of Ravnica."	Meaning: conclusions, reward, second chances, forgiveness.
+21	The World	Wheel of Sun and Moon	“Every life ends, but life itself never does.”	Meaning: completion, interconnectedness, enlightenment.

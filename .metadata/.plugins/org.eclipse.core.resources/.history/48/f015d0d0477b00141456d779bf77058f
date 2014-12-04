@@ -1,0 +1,81 @@
+import java.util.*;
+
+/**
+ * @author maddierook
+ *
+ */
+public class TarotHand {
+
+	private boolean alignment;
+
+	/**
+	 * A method to perform a single-card reading
+	 * @return 
+	 */
+	public void single() {
+		
+		Queue<MajorArcana> singleHand = new LinkedList<MajorArcana>();
+
+		//pick the upright or reversed deck
+		if (Math.random() < 0.5) {
+			alignment = true;
+		} else {
+			alignment = false;
+		}
+				
+		hand.add(cards1.pop());
+		cards2.pop();
+		
+		hand.add(cards2.pop());
+		cards1.pop();
+		
+		//print ascii of the spread
+		System.out.println();
+		System.out.println(" _______");
+		System.out.println("|       |");
+		System.out.println("|       |");
+		System.out.println("|   1   |");
+		System.out.println("|       |");
+		System.out.println("|       |");
+		System.out.println(" -------");
+		System.out.println();
+	
+	}
+
+	
+	/**
+	 * A method to perform a past, present, future reading
+	 */
+	public void triple() {
+		//print ascii of the spread
+				System.out.println();
+				System.out.println(" _______    _______    _______");
+				System.out.println("|       |  |       |  |       |");
+				System.out.println("|       |  |       |  |       |");
+				System.out.println("|   1   |  |   2   |  |   3   |");
+				System.out.println("|       |  |       |  |       |");
+				System.out.println("|       |  |       |  |       |");
+				System.out.println(" -------    -------    -------");
+				System.out.println("   Past     Present    Future");
+				System.out.println();
+				
+	}
+	
+	/**
+	 * A method to perform a pentagram reading
+	 */
+	public void pentagram() {
+		//TODO remove five cards in order from the HashSet
+		//TODO print ascii of the spread **this will be difficult
+	}
+	
+	/**
+	 * A method to perform a days-of-the-week reading
+	 */
+	public void week() {
+		//TODO remove seven cards in order from the HashSet
+		//TODO print ascii of the spread **this will be very difficult
+		
+	}
+
+}

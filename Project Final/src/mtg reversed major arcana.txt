@@ -1,22 +1,23 @@
-0	The Fool, reversed	N: Eager Cadet	F: “The enthusiasm of the young, sharpened by the discipline of a soldier.”	Meaning: innocence, beginnings. 
-1	The Magician, reversed	N: Mind Sculpt	F: ”Your mind was a curious mix of madness and genius. I just took away the genius."	Meaning: manipulation, poor planning.
-2	The High Priestess, reversed	N: Stealer of Secrets	F: “The Dimir would hire her, if only they knew where she lived. The Azorius would condemn her, if only they knew her name.”	Meaning: hidden agendas.
-3	The Empress, reversed	N: Tricks of the Trade	F: “Pathetic. You might as well have protected your treasures with a paper box and some string."	Meaning: creative block, dependence on others, loss of personal power.
-4	The Emperor, reversed	N: Cancel	F: “It is forbidden. Asking why is irrelevant."	Meaning: domination, inflexibility, single-mindedness.
-5	The Hierophant, reversed	N: Murmuring Phantasm	F: “The most insidious thing in the world is nonsense that sounds just plausible enough to listen to.”	Meaning: blind faith, abuse of power, misleading speech.
-6	The Lovers, Reversed	N: High Priest of Penance	F: “All I require is faith, loyalty, obedience, trust, and complete and utter devotion."	Meaning: imbalance, misunderstanding, manipulation.
-7	The Chariot, reversed	N: Celestial Flare	F: “You were defeated the moment you declared your aggression.”	Meaning: aggression, lack of direction or control, stagnation.
-8	Justice, reversed	N: Punish the Enemy	F: “When justice descends, the servant will burn with the master.”	Meaning: dishonesty, retribution, inflexibility.
-9	The Hermit, reversed	N: Killing Glare	F: “A casual glance into a dark corner may be your last.”	Meaning: isolation, loneliness, withdrawal.
-10	The Wheel, reversed	N: Coastline Chimera	F: “Seeing a chimera overhead foretells good fortune, but only because seeing one any closer foretells dismemberment.”	Meaning: bad luck, external forces beyond your control.
-11	Strength, reversed	N: Wall of Swords	F: "When I said we needed more swords to protect the realm, this was not quite what I had in mind."	Meaning: weakness, self-doubt, lack of self-discipline.
-12	The Hanged Man, reversed	N: Outwit	F: “The student asks how a spell is begun. The master ponders what ends it.”	Meaning: compassion, reversal of expectations, a new point of view.
-13	Death, reversed	N: Army of the Damned	F:	“Sometimes death comes knocking. Sometimes it tears down the walls.”	Meaning: detachment, resistance to change.
-14	Temperance, reversed	N: Assault Strobe	F: “When breaking someone's face once just isn't enough.”	Meaning: imbalance, lack of long-term vision, material excess.
-15	The Devil, reversed	N: Retraction Helix	F: “Where the geometries of the world collapse, a master of the Æther can harvest power beyond comprehending.”	Meaning: escape from illusion, breaking from old patterns, new insight.
-16	The Tower, reversed	N: Pillar of War	F: “Just because a temple has no guards doesn't mean it's undefended.”	Meaning: renewal, destruction of old forms, realization.
-17	The Star, reversed	N: Mending Hands	F: “I can staunch their blood, mend their flesh, and knit their bones. But I cannot restore their hope."	Meaning: despair, discouragement, insecurity, lack of progress or vision.
-18	The Moon, reversed	N: Fate Foretold	F: “The tale of her life was already written, but that didn't mean she could predict the ending.”	Meaning: indecision, disillusionment, anxiety, insecurity.
-19	The Sun, reversed	N: Last Word	F: “Someday, someone will best me. But it won't be today, and it won't be you.”	Meaning: lack of success, creative block, fear of the future.
-20	Judgement, reversed	N: Lyev Decree	F: “The Azorius have so many codes and statutes that you're always in violation of one of them.”	Meaning: self-doubt, misconceptions, jumping to conclusions.
-21	The World, reversed	N: Ray of Dissolution	F: “The works of one god last only as long as the patience of another.”	Meaning: lack of vision, failure to see the big picture, small-mindedness.
+Number	Title	Name	Flavor	Meaning	
+0	The Fool, reversed	Eager Cadet	“The enthusiasm of the young, sharpened by the discipline of a soldier.”	Meaning: innocence, beginnings. 
+1	The Magician, reversed	Mind Sculpt	”Your mind was a curious mix of madness and genius. I just took away the genius."	Meaning: manipulation, poor planning.
+2	The High Priestess, reversed	Stealer of Secrets	“The Dimir would hire her, if only they knew where she lived. The Azorius would condemn her, if only they knew her name.”	Meaning: hidden agendas.
+3	The Empress, reversed	Tricks of the Trade	“Pathetic. You might as well have protected your treasures with a paper box and some string."	Meaning: creative block, dependence on others, loss of personal power.
+4	The Emperor, reversed	Cancel	“It is forbidden. Asking why is irrelevant."	Meaning: domination, inflexibility, single-mindedness.
+5	The Hierophant, reversed	Murmuring Phantasm	“The most insidious thing in the world is nonsense that sounds just plausible enough to listen to.”	Meaning: blind faith, abuse of power, misleading speech.
+6	The Lovers, Reversed	High Priest of Penance	“All I require is faith, loyalty, obedience, trust, and complete and utter devotion."	Meaning: imbalance, misunderstanding, manipulation.
+7	The Chariot, reversed	Celestial Flare	“You were defeated the moment you declared your aggression.”	Meaning: aggression, lack of direction or control, stagnation.
+8	Justice, reversed	Punish the Enemy	“When justice descends, the servant will burn with the master.”	Meaning: dishonesty, retribution, inflexibility.
+9	The Hermit, reversed	Killing Glare	“A casual glance into a dark corner may be your last.”	Meaning: isolation, loneliness, withdrawal.
+10	The Wheel, reversed	Coastline Chimera	“Seeing a chimera overhead foretells good fortune, but only because seeing one any closer foretells dismemberment.”	Meaning: bad luck, external forces beyond your control.
+11	Strength, reversed	Wall of Swords	"When I said we needed more swords to protect the realm, this was not quite what I had in mind."	Meaning: weakness, self-doubt, lack of self-discipline.
+12	The Hanged Man, reversed	Outwit	“The student asks how a spell is begun. The master ponders what ends it.”	Meaning: compassion, reversal of expectations, a new point of view.
+13	Death, reversed	Army of the Damned	F:	“Sometimes death comes knocking. Sometimes it tears down the walls.”	Meaning: detachment, resistance to change.
+14	Temperance, reversed	Assault Strobe	“When breaking someone's face once just isn't enough.”	Meaning: imbalance, lack of long-term vision, material excess.
+15	The Devil, reversed	Retraction Helix	“Where the geometries of the world collapse, a master of the Æther can harvest power beyond comprehending.”	Meaning: escape from illusion, breaking from old patterns, new insight.
+16	The Tower, reversed	Pillar of War	“Just because a temple has no guards doesn't mean it's undefended.”	Meaning: renewal, destruction of old forms, realization.
+17	The Star, reversed	Mending Hands	“I can staunch their blood, mend their flesh, and knit their bones. But I cannot restore their hope."	Meaning: despair, discouragement, insecurity, lack of progress or vision.
+18	The Moon, reversed	Fate Foretold	“The tale of her life was already written, but that didn't mean she could predict the ending.”	Meaning: indecision, disillusionment, anxiety, insecurity.
+19	The Sun, reversed	Last Word	“Someday, someone will best me. But it won't be today, and it won't be you.”	Meaning: lack of success, creative block, fear of the future.
+20	Judgement, reversed	Lyev Decree	“The Azorius have so many codes and statutes that you're always in violation of one of them.”	Meaning: self-doubt, misconceptions, jumping to conclusions.
+21	The World, reversed	Ray of Dissolution	“The works of one god last only as long as the patience of another.”	Meaning: lack of vision, failure to see the big picture, small-mindedness.

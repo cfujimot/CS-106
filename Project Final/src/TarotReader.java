@@ -1,16 +1,20 @@
-//imports hash set capability
 import java.io.*;
 import java.util.*;
 
 /**
+ * A program to generate a tarot reading of Magic: The Gathering cards.
+ * Card names and flavor texts are sourced from <gatherer.wizards.com>
+ * 
  * @author maddierook
  *
  */
 public class TarotReader {
 
 	/**
+	 * A method to ask which spread the user would like read, build a tarot deck from the input files, and read the hand of cards.
+	 * 
 	 * @param args
-	 * @throws FileNotFoundException 
+	 * @throws FileNotFoundException
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
 		
@@ -32,7 +36,7 @@ public class TarotReader {
 		
 		TarotDeck deck = new TarotDeck();
 		deck.load();
-			
+		
 		if (spread.equals("1")) {
 			deck.single();
 		} else if (spread.equals("2")) {
