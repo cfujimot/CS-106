@@ -38,13 +38,13 @@ public class TarotReader {
 		deck.load();
 		
 		if (spread.equals("1")) {
-			deck.single();
+			System.out.println(deck.single());
 		} else if (spread.equals("2")) {
-			deck.triple();
+			System.out.println(deck.triple());
 		} else if (spread.equals("3")) {
-			deck.pentagram();
+			System.out.println(deck.pentagram());
 		} else if (spread.equals("4")) {
-			deck.week();
+			System.out.println(deck.week());
 		}
 	}
 	
