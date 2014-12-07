@@ -74,7 +74,6 @@ public class TarotDeck {
 		Collections.shuffle(cards1);
 		Collections.shuffle(cards2);
 		
-		//check that the decks shuffled-- curiously, both decks are populated by the same card 22 times.
 		for (MajorArcana c : cards1) {
 			System.out.println(number + ": " + name);
 			System.out.println(mtgName);

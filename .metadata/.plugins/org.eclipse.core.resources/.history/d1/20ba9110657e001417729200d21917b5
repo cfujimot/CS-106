@@ -18,6 +18,7 @@ public class TarotDeck {
 	public String meaning;
 	private ArrayList<MajorArcana> cards1;
 	private ArrayList<MajorArcana> cards2;
+	private boolean alignment;
 
 	/**
 	 * 
@@ -73,15 +74,7 @@ public class TarotDeck {
 		//shuffles both decks
 		Collections.shuffle(cards1);
 		Collections.shuffle(cards2);
-		
-		//check that the decks shuffled-- curiously, both decks are populated by the same card 22 times.
-		for (MajorArcana c : cards1) {
-			System.out.println(number + ": " + name);
-			System.out.println(mtgName);
-			System.out.println(flavor);
-			System.out.println(meaning);
-			System.out.println();
-		}
+
 	}
 
 	/**
@@ -108,7 +101,7 @@ public class TarotDeck {
 		//creates the hand
 		Queue<MajorArcana> hand = new LinkedList<MajorArcana>();
 
-		//builds the hand; if <0.5, pulls from the upright deck, else from reversed
+		//builds the hand; if alignment is true, pulls from the upright deck; if false, pulls from reversed
 		if (Math.random() < 0.5) {
 			hand.add(cards1.get(0));
 		} else {
@@ -142,9 +135,17 @@ public class TarotDeck {
 		while (hand.size() < 3) {
 			//picks the upright or reversed deck
 			if (Math.random() < 0.5) {
-				hand.add(cards1.get(0));
+				alignment = true;
 			} else {
+				alignment = false;
+			}
+			//if alignment is true, pulls from the upright deck; if false, pulls from reversed
+			if (alignment = true) {
+				hand.add(cards1.get(0));
+				//cards2.pop();			
+			} else if (alignment = false) {
 				hand.add(cards2.get(0));
+				//cards1.pop();
 			}
 		}
 		
@@ -190,9 +191,17 @@ public class TarotDeck {
 		while (hand.size() < 5) {
 			//picks the upright or reversed deck
 			if (Math.random() < 0.5) {
-				hand.add(cards1.get(0));
+				alignment = true;
 			} else {
+				alignment = false;
+			}
+			//if alignment is true, pulls from the upright deck; if false, pulls from reversed
+			if (alignment = true) {
+				hand.add(cards1.get(0));
+				//cards2.pop();			
+			} else if (alignment = false) {
 				hand.add(cards2.get(0));
+				//cards1.pop();
 			}
 		}
 				
@@ -210,9 +219,17 @@ public class TarotDeck {
 		while (hand.size() < 7) {
 			//picks the upright or reversed deck
 			if (Math.random() < 0.5) {
-				hand.add(cards1.get(0));
+				alignment = true;
 			} else {
+				alignment = false;
+			}
+			//if alignment is true, pulls from the upright deck; if false, pulls from reversed
+			if (alignment = true) {
+				hand.add(cards1.get(0));
+				//cards2.pop();			
+			} else if (alignment = false) {
 				hand.add(cards2.get(0));
+				//cards1.pop();
 			}
 		}
 				
