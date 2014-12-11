@@ -92,35 +92,34 @@ public class TarotDeck {
 			if (Math.random() < 0.5) {
 				hand.add(cards1.get(0));
 				cards1.remove(0);
+				//removes the matching card from the reversed deck
+				int indexOf2 = -1;
+				for (MajorArcana h : hand) {
+					int remove2 = 0;
+					for (MajorArcana c : cards2) {
+						if (c.number == h.number) {
+							indexOf2 = remove2;
+						}
+						remove2 ++;
+					}	
+				}
+				cards2.remove(indexOf2);	
 			} else {
 				hand.add(cards2.get(0));
 				cards2.remove(0);
-			}
-			
-			for (MajorArcana h : hand) {
-				int remove1 = 0;
-				for (MajorArcana c : cards1) {
-					if (c.number == h.number) {
-						cards1.remove(remove1);
-					}
-					remove1 ++;
+				int indexOf1 =-1;
+				for (MajorArcana h : hand) {
+					int remove1 = 0;
+					for (MajorArcana d : cards1) {
+						if (d.number == h.number) {
+							indexOf1 = remove1;
+						}
+						remove1 ++;
+					}	
 				}
-				int remove2 = 0;
-				for (MajorArcana d : cards2) {
-					if (d.number == h.number) {
-						cards2.remove(remove2);
-					}
-					remove2 ++;
-				}
-			}
-			
-			for (MajorArcana i : cards1) {
-				System.out.println(i.name);				
-			}
-			System.out.println();
-		
+				cards1.remove(indexOf1);
+			}	
 		}
-		
 		//calls a method to print the reading
 		print(hand);
 	}
@@ -143,8 +142,5 @@ public class TarotDeck {
 			i++;
 		}	
 	}
-	
-	
-	
 	
 }

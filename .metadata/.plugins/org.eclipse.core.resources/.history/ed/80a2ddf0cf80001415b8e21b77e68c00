@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class TarotDeck {
 
-	public String number;
+	public int number;
 	public String name;
 	public String mtgName;
 	public String flavor;
@@ -36,7 +36,7 @@ public class TarotDeck {
 			String line[] = fileReader1.nextLine().split("\\t");
 			
 			//assigns each token to the appropriate variable
-			number = line[0];
+			number = Integer.valueOf(line[0]);
 			name = line[1];
 			mtgName = line[2];
 			flavor = line[3];
@@ -59,7 +59,7 @@ public class TarotDeck {
 			String line[] = fileReader2.nextLine().split("\\t");
 				
 			//assigns each token to the appropriate variable
-			number = line[0];
+			number = Integer.valueOf(line[0]);
 			name = line[1];
 			mtgName = line[2];
 			flavor = line[3];
@@ -92,15 +92,34 @@ public class TarotDeck {
 			if (Math.random() < 0.5) {
 				hand.add(cards1.get(0));
 				cards1.remove(0);
+				
+				
+				
 			} else {
 				hand.add(cards2.get(0));
 				cards2.remove(0);
 			}
 			
+			int indexOf1 =-1;
+			int indexOf2 = -1;
 			for (MajorArcana h : hand) {
-				System.out.println(cards1.index(hand, 1));				
-				System.out.println(cards2.index(hand, 2));
+				int remove1 = 0;
+				for (MajorArcana c : cards1) {
+					if (c.number == h.number) {
+						indexOf1 = remove1;
+					}
+					remove1 ++;
+				}
+				int remove2 = 0;
+				for (MajorArcana d : cards2) {
+					if (d.number == h.number) {
+						indexOf2 = remove2;
+					}
+					remove2 ++;
+				}
 			}
+			cards1.remove(indexOf1);
+			cards2.remove(indexOf2);
 
 			
 			for (MajorArcana i : cards1) {
@@ -133,27 +152,7 @@ public class TarotDeck {
 		}	
 	}
 	
-	private int index(ArrayList<MajorArcana> hand, int deck) {
-		
-		if (deck == 1) {
-			for (MajorArcana h : hand) {
-				for (MajorArcana c : cards1) {
-					if (h.number == c.number) {
-					return cards1.indexOf(c.number);
-					}
-				}
-			}
-		} else if (deck == 2) {
-			for (MajorArcana h : hand) {
-				for (MajorArcana d : cards2) {
-					if (h.number == d.number) {
-					return cards2.indexOf(d.number);
-					}
-				}
-			}
-		}
-		return -1;
-	}
+	
 	
 	
 }

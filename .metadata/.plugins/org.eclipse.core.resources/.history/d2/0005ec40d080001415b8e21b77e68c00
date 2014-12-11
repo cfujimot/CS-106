@@ -9,9 +9,9 @@ import java.util.*;
  * @author maddierook
  *
  */
-public class TarotDeck implements Comparable<MajorArcana> {
+public class TarotDeck {
 
-	public String number;
+	public int number;
 	public String name;
 	public String mtgName;
 	public String flavor;
@@ -36,7 +36,7 @@ public class TarotDeck implements Comparable<MajorArcana> {
 			String line[] = fileReader1.nextLine().split("\\t");
 			
 			//assigns each token to the appropriate variable
-			number = line[0];
+			number = Integer.valueOf(line[0]);
 			name = line[1];
 			mtgName = line[2];
 			flavor = line[3];
@@ -59,7 +59,7 @@ public class TarotDeck implements Comparable<MajorArcana> {
 			String line[] = fileReader2.nextLine().split("\\t");
 				
 			//assigns each token to the appropriate variable
-			number = line[0];
+			number = Integer.valueOf(line[0]);
 			name = line[1];
 			mtgName = line[2];
 			flavor = line[3];
@@ -92,14 +92,32 @@ public class TarotDeck implements Comparable<MajorArcana> {
 			if (Math.random() < 0.5) {
 				hand.add(cards1.get(0));
 				cards1.remove(0);
+				//removes the matching card from the reversed deck
+				int indexOf2 = -1;
+				for (MajorArcana h : hand) {
+					int remove2 = 0;
+					for (MajorArcana c : cards2) {
+						if (c.number == h.number) {
+							indexOf2 = remove2;
+						}
+						remove2 ++;
+					}	
+				}
+				cards2.remove(indexOf2);	
 			} else {
 				hand.add(cards2.get(0));
 				cards2.remove(0);
-			}
-			
-			for (MajorArcana h : hand) {
-				cards1.remove(indexOf(h.number));
-				cards2.remove(indexOf(h.number));
+				int indexOf1 =-1;
+				for (MajorArcana h : hand) {
+					int remove1 = 0;
+					for (MajorArcana c : cards1) {
+						if (c.number == h.number) {
+							indexOf1 = remove1;
+						}
+						remove1 ++;
+					}	
+				}
+				cards1.remove(indexOf1);
 			}
 			
 			for (MajorArcana i : cards1) {
@@ -132,11 +150,7 @@ public class TarotDeck implements Comparable<MajorArcana> {
 		}	
 	}
 	
-	private int compareTo(MajorArcana h) {
-		
-		return 1;
-		
-	}
+	
 	
 	
 }
