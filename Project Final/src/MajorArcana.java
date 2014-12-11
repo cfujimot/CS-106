@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * @author maddierook
  *
@@ -6,7 +8,7 @@
  */
 public class MajorArcana {
 
-	public String number;
+	public int number;
 	public String name;
 	public String mtgName;
 	public String flavor;
@@ -20,7 +22,7 @@ public class MajorArcana {
 	 * @param flavor1 The flavor text of that MTG card, per Wizards of the Coast
 	 * @param meaning1 The tarot meaning associated with the traditional cards
 	 */
-	public MajorArcana(String number1, String name1, String mtgName1, String flavor1, String meaning1){
+	public MajorArcana(int number1, String name1, String mtgName1, String flavor1, String meaning1){
 	
 		this.number =  number1;
 		this.name = name1;
@@ -28,5 +30,5 @@ public class MajorArcana {
 		this.flavor = flavor1;
 		this.meaning = meaning1;
 	}
-	
+
 }
