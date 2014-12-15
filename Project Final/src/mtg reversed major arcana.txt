@@ -12,7 +12,7 @@ Number	Title	Name	Flavor	Meaning
 10	The Wheel, reversed	Coastline Chimera	“Seeing a chimera overhead foretells good fortune, but only because seeing one any closer foretells dismemberment.”	Meaning: bad luck, external forces beyond your control.
 11	Strength, reversed	Wall of Swords	"When I said we needed more swords to protect the realm, this was not quite what I had in mind."	Meaning: weakness, self-doubt, lack of self-discipline.
 12	The Hanged Man, reversed	Outwit	“The student asks how a spell is begun. The master ponders what ends it.”	Meaning: compassion, reversal of expectations, a new point of view.
-13	Death, reversed	Army of the Damned	F:	“Sometimes death comes knocking. Sometimes it tears down the walls.”	Meaning: detachment, resistance to change.
+13	Death, reversed	Army of the Damned	“Sometimes death comes knocking. Sometimes it tears down the walls.”	Meaning: detachment, resistance to change.
 14	Temperance, reversed	Assault Strobe	“When breaking someone's face once just isn't enough.”	Meaning: imbalance, lack of long-term vision, material excess.
 15	The Devil, reversed	Retraction Helix	“Where the geometries of the world collapse, a master of the Æther can harvest power beyond comprehending.”	Meaning: escape from illusion, breaking from old patterns, new insight.
 16	The Tower, reversed	Pillar of War	“Just because a temple has no guards doesn't mean it's undefended.”	Meaning: renewal, destruction of old forms, realization.

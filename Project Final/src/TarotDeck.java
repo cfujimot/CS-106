@@ -2,11 +2,17 @@ import java.io.*;
 import java.util.*;
 
 /**
- * 
- */
-
-/**
  * @author maddierook
+ * 
+ * A class that contains operations performed on the decks of cards.
+ *
+ * @param number The number of each Major Arcana card, 0-21
+ * @param name The name of the tarot card
+ * @param mtgName The name of the MTG card associated with each tarot card
+ * @param flavor The flavor text associated witht that MTG card
+ * @param meaning The tarot meaning of the card
+ * @param cards1 The upright deck
+ * @param cards2 The reversed deck
  *
  */
 public class TarotDeck {
@@ -21,7 +27,13 @@ public class TarotDeck {
 
 	/**
 	 * 
+	 * @param fileReader1 The scanner that reads in the file of upright cards
+	 * @param fileReader2 The scanner that reads in the file of reversed cards
+	 * @param line1 An array of the information for one card in the upright file
+	 * @param line2 An array of the information for one card in the reversed file
+	 * 
 	 * @throws FileNotFoundException
+	 * 
 	 */
 	public void load() throws FileNotFoundException { 
 		//begins building 1st deck from upright file
@@ -33,14 +45,14 @@ public class TarotDeck {
 		while (fileReader1.hasNextLine()) {
 			
 			//reads in each line as an array, splitting tokens based on tabs
-			String line[] = fileReader1.nextLine().split("\\t");
+			String line1[] = fileReader1.nextLine().split("\\t");
 			
 			//assigns each token to the appropriate variable
-			number = Integer.valueOf(line[0]);
-			name = line[1];
-			mtgName = line[2];
-			flavor = line[3];
-			meaning = line[4];
+			number = Integer.valueOf(line1[0]);
+			name = line1[1];
+			mtgName = line1[2];
+			flavor = line1[3];
+			meaning = line1[4];
 			
 			//constructs the upright deck from MajorArcana objects
 			cards1.add(new MajorArcana(number, name, mtgName, flavor, meaning));
@@ -56,14 +68,14 @@ public class TarotDeck {
 		while (fileReader2.hasNextLine()) {
 			
 			//reads in each line as an array, splitting tokens based on tabs
-			String line[] = fileReader2.nextLine().split("\\t");
+			String line2[] = fileReader2.nextLine().split("\\t");
 				
 			//assigns each token to the appropriate variable
-			number = Integer.valueOf(line[0]);
-			name = line[1];
-			mtgName = line[2];
-			flavor = line[3];
-			meaning = line[4];
+			number = Integer.valueOf(line2[0]);
+			name = line2[1];
+			mtgName = line2[2];
+			flavor = line2[3];
+			meaning = line2[4];
 						
 			//constructs the reversed deck from MajorArcana objects
 			cards2.add(new MajorArcana(number, name, mtgName, flavor, meaning));
@@ -78,18 +90,27 @@ public class TarotDeck {
 
 	
 	/**
-	 * A method to perform a reading based on the input hand size
+	 * A method to perform a reading based on the input hand size, determined by the spread in the main method.
 	 * 
-	 * @param spread
+	 * @param numCards The number of cards in the chosen spread, passed by the main method
+	 * @param hand An array list of cards for the spread, populated from the decks cards1 and cards2
+	 * @param indexOf1 A counter to store the index of the matching upright card in order to remove it
+	 * @param indexOf2 A counter to store the index of the matching reversed card in order to remove it
+	 * @param remove1 A counter to keep track of the index in the upright deck while searching for the matching card
+	 * @param remove2 A counter to keep track of the index in the reversed deck while searching for the matching card
+	 * 
+	 * The method works as follows: while the hand is not full, boolean pick upright or reversed; pull the first card off the top of that deck, then search through the other deck for the matching card and remove it.
+	 * To remove matching card, cycles through the deck to match based on number, incrementing the remove counter.
+	 * When it finds it, sets indexOf to the value of remove and then deletes that card from the deck.
 	 * 
 	 */
-	public void read(int spread) {
+	public void read(int numCards) {
 				
-		//builds the hand out to 3 cards
+		//creates the hand and populates it with the appropriate number of cards
 		ArrayList<MajorArcana> hand = new ArrayList<MajorArcana>();
-		while (hand.size() < spread) {
-			//picks the upright or reversed deck
-			if (Math.random() < 0.5) {
+		while (hand.size() < numCards) {
+			//picks the upright or reversed deck, adds the card off the top of that deck to the hand, and removes it from the deck
+			if (Math.random() < 0.55) {
 				hand.add(cards1.get(0));
 				cards1.remove(0);
 				//removes the matching card from the reversed deck
@@ -97,6 +118,7 @@ public class TarotDeck {
 				for (MajorArcana h : hand) {
 					int remove2 = 0;
 					for (MajorArcana c : cards2) {
+						//if the card matches, remove it; else increment the counter
 						if (c.number == h.number) {
 							indexOf2 = remove2;
 						}
@@ -126,9 +148,10 @@ public class TarotDeck {
 	
 	
 	/**
-	 * A method to print the formatted result of the spread
+	 * A method to print the formatted result of the spread.
 	 * 
-	 * @param hand
+	 * @param hand An array list of cards for the spread, in the order that they were pulled from the decks cards1 and cards2
+	 * @param i A counter for the number of cards in the hand
 	 */
 	private void print(ArrayList<MajorArcana> hand) {
 		//for each MajorArcana object in the hand, print out a formatted reading

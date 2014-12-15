@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * @author maddierook
  *
- * A constructor class for the MajorArcana (individual card) object
+ * A constructor class for the MajorArcana (individual card) object.
  *
  */
 public class MajorArcana {
